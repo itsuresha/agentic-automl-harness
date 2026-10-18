@@ -1,0 +1,240 @@
+{
+  "phase": "CP-6 Phase A dataset verification",
+  "created_at": "2026-09-15T20:04:18+0530",
+  "pre_registered": [
+    1590,
+    1457,
+    23517,
+    168350,
+    168757
+  ],
+  "cc18_suite_id": 99,
+  "cc18_dataset_count": 72,
+  "replacement_preferred_suite": {
+    "openml_study_id": 271,
+    "alias": "amlb-classification-all",
+    "dataset_count": 71
+  },
+  "verified": [],
+  "rejected": [
+    {
+      "openml_id": 1590,
+      "name": "adult",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 48842,
+      "n_features": 15,
+      "n_classes": 2,
+      "n_missing_values": 6465,
+      "minority_class_size": 11687,
+      "majority_class_size": 37155,
+      "reason": "CC-18 member"
+    },
+    {
+      "openml_id": 1457,
+      "name": "amazon-commerce-reviews",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "Class",
+      "n_instances": 1500,
+      "n_features": 10001,
+      "n_classes": 50,
+      "n_missing_values": 0,
+      "minority_class_size": 30,
+      "majority_class_size": 30,
+      "reason": "dev corpus member"
+    },
+    {
+      "openml_id": 23517,
+      "name": "numerai28.6",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "attribute_21",
+      "n_instances": 96320,
+      "n_features": 22,
+      "n_classes": 2,
+      "n_missing_values": 0,
+      "minority_class_size": 47662,
+      "majority_class_size": 48658,
+      "reason": "CC-18 member"
+    },
+    {
+      "openml_id": 168350,
+      "name": "UNKNOWN",
+      "reason": "OpenML error: 412 Client Error: Precondition Failed for url: https://www.openml.org/api/v1/json/data/168350"
+    },
+    {
+      "openml_id": 168757,
+      "name": "UNKNOWN",
+      "reason": "OpenML error: 412 Client Error: Precondition Failed for url: https://www.openml.org/api/v1/json/data/168757"
+    }
+  ],
+  "replacements": [
+    {
+      "openml_id": 41146,
+      "name": "sylvine",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 5124,
+      "n_features": 21,
+      "n_classes": 2,
+      "n_missing_values": 0,
+      "minority_class_size": 2562,
+      "majority_class_size": 2562
+    },
+    {
+      "openml_id": 40498,
+      "name": "wine-quality-white",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "Class",
+      "n_instances": 4898,
+      "n_features": 12,
+      "n_classes": 7,
+      "n_missing_values": 0,
+      "minority_class_size": 5,
+      "majority_class_size": 2198
+    },
+    {
+      "openml_id": 41145,
+      "name": "philippine",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 5832,
+      "n_features": 309,
+      "n_classes": 2,
+      "n_missing_values": 0,
+      "minority_class_size": 2916,
+      "majority_class_size": 2916
+    },
+    {
+      "openml_id": 41164,
+      "name": "fabert",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 8237,
+      "n_features": 801,
+      "n_classes": 7,
+      "n_missing_values": 0,
+      "minority_class_size": 502,
+      "majority_class_size": 1927
+    },
+    {
+      "openml_id": 41156,
+      "name": "ada",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 4147,
+      "n_features": 49,
+      "n_classes": 2,
+      "n_missing_values": 0,
+      "minority_class_size": 1029,
+      "majority_class_size": 3118
+    },
+    {
+      "openml_id": 181,
+      "name": "yeast",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class_protein_localization",
+      "n_instances": 1484,
+      "n_features": 9,
+      "n_classes": 10,
+      "n_missing_values": 0,
+      "minority_class_size": 5,
+      "majority_class_size": 463
+    }
+  ],
+  "final_datasets": [
+    {
+      "openml_id": 41146,
+      "name": "sylvine",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 5124,
+      "n_features": 21,
+      "n_classes": 2,
+      "n_missing_values": 0,
+      "minority_class_size": 2562,
+      "majority_class_size": 2562
+    },
+    {
+      "openml_id": 40498,
+      "name": "wine-quality-white",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "Class",
+      "n_instances": 4898,
+      "n_features": 12,
+      "n_classes": 7,
+      "n_missing_values": 0,
+      "minority_class_size": 5,
+      "majority_class_size": 2198
+    },
+    {
+      "openml_id": 41145,
+      "name": "philippine",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 5832,
+      "n_features": 309,
+      "n_classes": 2,
+      "n_missing_values": 0,
+      "minority_class_size": 2916,
+      "majority_class_size": 2916
+    },
+    {
+      "openml_id": 41164,
+      "name": "fabert",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 8237,
+      "n_features": 801,
+      "n_classes": 7,
+      "n_missing_values": 0,
+      "minority_class_size": 502,
+      "majority_class_size": 1927
+    },
+    {
+      "openml_id": 41156,
+      "name": "ada",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class",
+      "n_instances": 4147,
+      "n_features": 49,
+      "n_classes": 2,
+      "n_missing_values": 0,
+      "minority_class_size": 1029,
+      "majority_class_size": 3118
+    },
+    {
+      "openml_id": 181,
+      "name": "yeast",
+      "status": "active",
+      "format": "ARFF",
+      "default_target_attribute": "class_protein_localization",
+      "n_instances": 1484,
+      "n_features": 9,
+      "n_classes": 10,
+      "n_missing_values": 0,
+      "minority_class_size": 5,
+      "majority_class_size": 463
+    }
+  ],
+  "n_final": 6,
+  "target_n": 6,
+  "notes": [
+    "Dataset roster is written before any AIDE traces.",
+    "No OpenAI API call is made by this script.",
+    "Final roster must be frozen before Phase B."
+  ]
+}

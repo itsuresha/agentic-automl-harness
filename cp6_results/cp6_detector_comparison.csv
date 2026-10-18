@@ -1,0 +1,8 @@
+detector,target,precision,recall,f1,tp,fp,fn,n_positive
+D1,F1,1.0,0.8182,0.9,27,0,6,33
+D2_gate,F2,0.6,1.0,0.75,12,8,0,12
+D2_monitor,F2,0.5217,1.0,0.6857,12,11,0,12
+D3_gate,F3,0.4074,0.6111,0.4889,11,16,7,18
+D3_monitor,F3,0.7222,0.7222,0.7222,13,5,5,18
+D_any_gate,any_fault,0.8136,0.8889,0.8496,48,11,6,54
+D_any_monitor,any_fault,0.9286,0.963,0.9455,52,4,2,54

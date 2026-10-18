@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Individual detector performance on the CP-6 corpus. D1 and D2 are rule-based; D3, D\_any are LightGBM.}
+\label{tab:detector_comparison}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Detector & Target & Prec. & Recall & F1 & TP & FP & FN \\
+\midrule
+D1 & F1 & 1.0000 & 0.8182 & 0.9000 & 27 & 0 & 6 \\
+D2_gate & F2 & 0.6000 & 1.0000 & 0.7500 & 12 & 8 & 0 \\
+D2_monitor & F2 & 0.5217 & 1.0000 & 0.6857 & 12 & 11 & 0 \\
+D3_gate & F3 & 0.4074 & 0.6111 & 0.4889 & 11 & 16 & 7 \\
+D3_monitor & F3 & 0.7222 & 0.7222 & 0.7222 & 13 & 5 & 5 \\
+D_any_gate & any_fault & 0.8136 & 0.8889 & 0.8496 & 48 & 11 & 6 \\
+D_any_monitor & any_fault & 0.9286 & 0.9630 & 0.9455 & 52 & 4 & 2 \\
+\bottomrule
+\end{tabular}
+\end{table}

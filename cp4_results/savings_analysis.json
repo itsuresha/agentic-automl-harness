@@ -1,0 +1,23 @@
+{
+  "tier1_gate": {
+    "description": "Correctly flagged pre-execution trials; genuine skip savings.",
+    "true_positives": 107,
+    "false_positives": 7,
+    "wall_clock_saved_sec": 9325.03,
+    "wall_clock_wasted_sec": 756.15,
+    "savings_pct": 52.99
+  },
+  "tier2_monitor_additional": {
+    "description": "Additional faulty trials caught post-execution; no direct skip savings.",
+    "additional_true_positives": 8,
+    "wall_clock_of_flagged_sec": 390.84
+  },
+  "combined_detection": {
+    "total_true_positives": 115,
+    "total_faulty": 121,
+    "combined_recall": 0.9504,
+    "tier1_genuine_savings_pct": 52.99,
+    "oracle_ceiling_pct": 55.69
+  },
+  "total_wall_clock_sec": 17598.74
+}

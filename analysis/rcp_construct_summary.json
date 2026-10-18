@@ -1,0 +1,13 @@
+{
+  "n_rcp_steps_analyzed": 46,
+  "n_rcp_steps_with_donor": 46,
+  "n_rcp_total": 64,
+  "mean_abs_delta": 0.04033963569820349,
+  "median_abs_delta": 0.0026000000000000467,
+  "std_delta": 0.15972233741352648,
+  "pct_within_001": 41.30434782608695,
+  "pct_within_005": 69.56521739130434,
+  "pct_improved": 41.30434782608695,
+  "pct_matched": 41.30434782608695,
+  "pct_degraded": 17.391304347826086
+}

@@ -1,0 +1,175 @@
+{
+  "freeze_date": "2026-09-15",
+  "protocol_version": "2.1-project-corrected-oracle-artifact",
+  "status": "FROZEN",
+  "verifiers": {
+    "CP3R": "35/35 PASS",
+    "CP4R": "37/37 PASS",
+    "CP5R": "36/38; two documented monitor-tier findings, not forced"
+  },
+  "corpus": {
+    "steps": 208,
+    "faulty": 121,
+    "clean": 87,
+    "datasets": 16
+  },
+  "cp5r_alpha_0_10": {
+    "gate_threshold": 0.324949,
+    "monitor_threshold": 0.951217,
+    "gate_fsr": 0.0909,
+    "monitor_fsr": 0.0909
+  },
+  "lodo_rows": 192,
+  "frozen_files": [
+    {
+      "path": "FREEZE_PROTOCOL.md",
+      "exists": true,
+      "sha256": "49e943e40472ed2a5738c6bd0dae3f22c3974530264a74e9ce3e11bf9b9ecf46",
+      "bytes": 24695
+    },
+    {
+      "path": "scripts/feature_extractor.py",
+      "exists": true,
+      "sha256": "dab78d3277413ce0c92f1ff5fdceb5cd20ceb0a3b0679b90c7539b65ef92a84e",
+      "bytes": 21560
+    },
+    {
+      "path": "scripts/fault_labeler.py",
+      "exists": true,
+      "sha256": "f3bc537361ae3d23635585a1016e5e1046135c236062b8f7aa8afde25661ce4c",
+      "bytes": 5715
+    },
+    {
+      "path": "scripts/detectors.py",
+      "exists": true,
+      "sha256": "7ee019b02c7cf4d715e5dfb954b4dec3547e4fae2a85e55eee2d027224a221a4",
+      "bytes": 19175
+    },
+    {
+      "path": "scripts/conformal_gate.py",
+      "exists": true,
+      "sha256": "98404b7fd565eac037b65491a96955fbe8b04102e7557aac7ac2ddd3aeecafdf",
+      "bytes": 11539
+    },
+    {
+      "path": "scripts/run_cp3.py",
+      "exists": true,
+      "sha256": "24f6dd4312ea64dc6f0d870aee5fc12fc748dfea62edf2de6eecfa43c2766ee2",
+      "bytes": 45864
+    },
+    {
+      "path": "scripts/run_cp4.py",
+      "exists": true,
+      "sha256": "a54a23b5336b8087495321f936bf5d314a106c72518276c16bbe2d41f8b86330",
+      "bytes": 12708
+    },
+    {
+      "path": "scripts/run_cp5.py",
+      "exists": true,
+      "sha256": "482c7a1c667ec18686a0b4908657a98d572bdf38e0235e3a5f22cb17811b7b7f",
+      "bytes": 19518
+    },
+    {
+      "path": "features/step_features.csv",
+      "exists": true,
+      "sha256": "b7c38ed0431c737e619affddd2756b3c369607e80773598fe94c7acf2bef1d63",
+      "bytes": 28565
+    },
+    {
+      "path": "labels/combined_labels.csv",
+      "exists": true,
+      "sha256": "1be1bbcbe5c4656b9312b8220502c87d78798d7ae76e8f6a3b467737aceb6e79",
+      "bytes": 9372
+    },
+    {
+      "path": "oracle/oracle_evaluation.json",
+      "exists": true,
+      "sha256": "f7006b061ea193ac354450c4232d6fdec1e48329413a9e3e85274598b8ec56de",
+      "bytes": 1414
+    },
+    {
+      "path": "cp4_results/cp4r_evaluation.json",
+      "exists": true,
+      "sha256": "333c5487cb29b6829fda2fdb0b02c1e8b3bac1a944f04e031ac2b184a7a7fb15",
+      "bytes": 41707
+    },
+    {
+      "path": "cp4_results/oof_predictions_D_any_gate.csv",
+      "exists": true,
+      "sha256": "f0baaaf0349bbe53875f3a882578c5671ebf1d4ff3e76ffa7a2e57bfe35cea3c",
+      "bytes": 7420
+    },
+    {
+      "path": "cp4_results/oof_predictions_D_any_monitor.csv",
+      "exists": true,
+      "sha256": "8247731bcb9117f5eca373844c4560bb3cd7139942ffa8f0453a4cebc2650c8f",
+      "bytes": 7462
+    },
+    {
+      "path": "cp5_results/cp5r_evaluation.json",
+      "exists": true,
+      "sha256": "dfc65b762923dceebac182247b41bb3805b3d8f3059a669b409768877bb41991",
+      "bytes": 67472
+    },
+    {
+      "path": "cp5_results/conformal_thresholds.csv",
+      "exists": true,
+      "sha256": "c47035e9334af380cfb9f9fe6f0fa4b99b378c8b6a2a289286fe0d658dddc065",
+      "bytes": 1206
+    },
+    {
+      "path": "cp5_results/lodo_cross_conformal.csv",
+      "exists": true,
+      "sha256": "d526be17e89899b190b5e658ab0ff70517995993f0f1409f1593084c095086e8",
+      "bytes": 11269
+    },
+    {
+      "path": "cp5_results/per_class_analysis.csv",
+      "exists": true,
+      "sha256": "dcb17c5163e7f1b580b6e2a0ef970f31d7dc0449ddb6bb046b85c9fee6cb383e",
+      "bytes": 181
+    },
+    {
+      "path": "analysis/fault_taxonomy.json",
+      "exists": true,
+      "sha256": "bf636b2725141c928152b6583dccf5b802d825207f057b3c27380b2609d161e6",
+      "bytes": 1764
+    },
+    {
+      "path": "analysis/rcp_construct_analysis.csv",
+      "exists": true,
+      "sha256": "cfc9f382ee8323cc90f7be19094a4be59c0dde35638dc6d1623de5b36ef6cd75",
+      "bytes": 3503
+    },
+    {
+      "path": "analysis/file_manifest.json",
+      "exists": true,
+      "sha256": "b7cb588ab9ca3f12c57d75db105ef0c8c4cf0bc9fe2e72c6282353a9843851b0",
+      "bytes": 6575
+    },
+    {
+      "path": "verify_cp3r.py",
+      "exists": true,
+      "sha256": "82b3690cdae875e6f09626dbf02ab71d81588cffd8f5d75f30a2d9a9fc0fdc5a",
+      "bytes": 9910
+    },
+    {
+      "path": "verify_cp4r.py",
+      "exists": true,
+      "sha256": "3d196f33eb2e873391466e411624ced2a4e5f28f8beaa841c1a94fe1f7c2a1ac",
+      "bytes": 6282
+    },
+    {
+      "path": "verify_cp5r.py",
+      "exists": true,
+      "sha256": "8e380a67e4f010d34615165e655d3f69f5503fb59990dea19a122db50a558bd5",
+      "bytes": 10953
+    },
+    {
+      "path": "cp5_results/cp5r_run_audit.md",
+      "exists": true,
+      "sha256": "15a677338bb41614c9e035c447b8be54a1cd5afc154ca2d1f6d0c4006e58b5ec",
+      "bytes": 1537
+    }
+  ]
+}

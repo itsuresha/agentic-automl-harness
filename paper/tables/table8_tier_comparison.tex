@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Tier comparison on CP-6: Gate (Tier~1, structural features, blocks trials), Monitor (Tier~2, all features, flags for review), and Oracle (ground-truth upper bound).}
+\label{tab:tier_comparison}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Tier & FSR & Recall & Prec. & F1 & TP & FP \\
+\midrule
+Gate & 0.0741 & 0.9259 & 0.7812 & 0.8475 & 50 & 14 \\
+Monitor & 0.1111 & 0.8889 & 1.0000 & 0.9412 & 48 & 0 \\
+Oracle & 0.0000 & 1.0000 & 1.0000 & 1.0000 & 54 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

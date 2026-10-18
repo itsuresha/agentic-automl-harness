@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "checkpoint": "CP-6",
+    "freeze_protocol": "v2.1 (15 Sep 2026)",
+    "alpha": 0.1,
+    "lambda_gate": 0.324949,
+    "lambda_monitor": 0.951217,
+    "n_cp6_steps": 89,
+    "n_cp6_faulty": 54,
+    "n_cp6_datasets": 6,
+    "lgbm_params": {
+      "n_estimators": 100,
+      "max_depth": 4,
+      "learning_rate": 0.1,
+      "min_child_samples": 5,
+      "class_weight": "balanced",
+      "random_state": 42,
+      "verbose": -1,
+      "n_jobs": 1
+    }
+  },
+  "crc_evaluation": {
+    "gate": {
+      "lambda": 0.324949,
+      "fsr": 0.0741,
+      "recall": 0.9259,
+      "precision": 0.7812,
+      "f1": 0.8475,
+      "tp": 50,
+      "fp": 14,
+      "fn": 4,
+      "tn": 21
+    },
+    "monitor": {
+      "lambda": 0.951217,
+      "fsr": 0.1111,
+      "recall": 0.8889,
+      "precision": 1.0,
+      "f1": 0.9412,
+      "tp": 48,
+      "fp": 0,
+      "fn": 6,
+      "tn": 35
+    }
+  },
+  "combined_recall": 0.9259,
+  "additional_monitor_tp": 0,
+  "tier1_savings": {
+    "gross_savings_pct": 53.8,
+    "fp_cost_pct": 14.16,
+    "net_savings_pct": 39.64,
+    "oracle_ceiling_pct": 55.05
+  },
+  "per_class": {
+    "gate": [
+      {
+        "fault_class": "F1",
+        "n_total": 33,
+        "caught": 31,
+        "missed": 2,
+        "recall": 0.9394
+      },
+      {
+        "fault_class": "F2",
+        "n_total": 12,
+        "caught": 12,
+        "missed": 0,
+        "recall": 1.0
+      },
+      {
+        "fault_class": "F3",
+        "n_total": 18,
+        "caught": 14,
+        "missed": 4,
+        "recall": 0.7778
+      }
+    ],
+    "monitor": [
+      {
+        "fault_class": "F1",
+        "n_total": 33,
+        "caught": 30,
+        "missed": 3,
+        "recall": 0.9091
+      },
+      {
+        "fault_class": "F2",
+        "n_total": 12,
+        "caught": 12,
+        "missed": 0,
+        "recall": 1.0
+      },
+      {
+        "fault_class": "F3",
+        "n_total": 18,
+        "caught": 13,
+        "missed": 5,
+        "recall": 0.7222
+      }
+    ]
+  },
+  "per_dataset": [
+    {
+      "dataset": "ada",
+      "n_steps": 17,
+      "n_faulty": 11,
+      "gate_fsr": 0.1818,
+      "gate_tp": 9,
+      "gate_fp": 4,
+      "gate_fn": 2,
+      "monitor_fsr": 0.1818,
+      "net_savings_pct": -11.76
+    },
+    {
+      "dataset": "fabert",
+      "n_steps": 17,
+      "n_faulty": 12,
+      "gate_fsr": 0.0,
+      "gate_tp": 12,
+      "gate_fp": 0,
+      "gate_fn": 0,
+      "monitor_fsr": 0.0,
+      "net_savings_pct": 74.88
+    },
+    {
+      "dataset": "philippine",
+      "n_steps": 13,
+      "n_faulty": 10,
+      "gate_fsr": 0.0,
+      "gate_tp": 10,
+      "gate_fp": 3,
+      "gate_fn": 0,
+      "monitor_fsr": 0.1,
+      "net_savings_pct": 82.92
+    },
+    {
+      "dataset": "sylvine",
+      "n_steps": 17,
+      "n_faulty": 12,
+      "gate_fsr": 0.1667,
+      "gate_tp": 10,
+      "gate_fp": 5,
+      "gate_fn": 2,
+      "monitor_fsr": 0.25,
+      "net_savings_pct": 48.94
+    },
+    {
+      "dataset": "wine-quality-white",
+      "n_steps": 12,
+      "n_faulty": 5,
+      "gate_fsr": 0.0,
+      "gate_tp": 5,
+      "gate_fp": 1,
+      "gate_fn": 0,
+      "monitor_fsr": 0.0,
+      "net_savings_pct": 62.51
+    },
+    {
+      "dataset": "yeast",
+      "n_steps": 13,
+      "n_faulty": 4,
+      "gate_fsr": 0.0,
+      "gate_tp": 4,
+      "gate_fp": 1,
+      "gate_fn": 0,
+      "monitor_fsr": 0.0,
+      "net_savings_pct": 19.29
+    }
+  ],
+  "n_gate_covered_020": 6,
+  "detector_comparison": [
+    {
+      "detector": "D1",
+      "target": "F1",
+      "precision": 1.0,
+      "recall": 0.8182,
+      "f1": 0.9,
+      "tp": 27,
+      "fp": 0,
+      "fn": 6,
+      "n_positive": 33
+    },
+    {
+      "detector": "D2_gate",
+      "target": "F2",
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.75,
+      "tp": 12,
+      "fp": 8,
+      "fn": 0,
+      "n_positive": 12
+    },
+    {
+      "detector": "D2_monitor",
+      "target": "F2",
+      "precision": 0.5217,
+      "recall": 1.0,
+      "f1": 0.6857,
+      "tp": 12,
+      "fp": 11,
+      "fn": 0,
+      "n_positive": 12
+    },
+    {
+      "detector": "D3_gate",
+      "target": "F3",
+      "precision": 0.4074,
+      "recall": 0.6111,
+      "f1": 0.4889,
+      "tp": 11,
+      "fp": 16,
+      "fn": 7,
+      "n_positive": 18
+    },
+    {
+      "detector": "D3_monitor",
+      "target": "F3",
+      "precision": 0.7222,
+      "recall": 0.7222,
+      "f1": 0.7222,
+      "tp": 13,
+      "fp": 5,
+      "fn": 5,
+      "n_positive": 18
+    },
+    {
+      "detector": "D_any_gate",
+      "target": "any_fault",
+      "precision": 0.8136,
+      "recall": 0.8889,
+      "f1": 0.8496,
+      "tp": 48,
+      "fp": 11,
+      "fn": 6,
+      "n_positive": 54
+    },
+    {
+      "detector": "D_any_monitor",
+      "target": "any_fault",
+      "precision": 0.9286,
+      "recall": 0.963,
+      "f1": 0.9455,
+      "tp": 52,
+      "fp": 4,
+      "fn": 2,
+      "n_positive": 54
+    }
+  ],
+  "success_criteria": {
+    "gate_fsr_le_010": true,
+    "monitor_fsr_le_010": false,
+    "gate_f1_ge_070": true,
+    "tier1_net_savings_gt_0": true,
+    "stretch_gate_coverage_020": true
+  }
+}

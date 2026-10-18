@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{CP-6 AIDE run summary. All runs used OpenAI o3 as the backbone LLM with 20 steps per dataset.}
+\label{tab:cp6_trace}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Dataset & Best Metric & Wall (s) & Tokens & Cost (\$) & OK Steps & Buggy \\
+\midrule
+ada & 0.8271 & 4040 & 170,934 & 2.44 & 17 & 3 \\
+fabert & 0.7031 & 1751 & 113,829 & 1.89 & 17 & 3 \\
+philippine & 0.7777 & 2028 & 120,555 & 1.87 & 13 & 7 \\
+sylvine & 0.9549 & 962 & 123,891 & 1.60 & 17 & 3 \\
+wine-quality-white & 0.4183 & 3525 & 112,360 & 1.96 & 12 & 8 \\
+yeast & 0.5472 & 2842 & 119,479 & 1.89 & 13 & 7 \\
+\midrule
+\textbf{Total} & --- & \textbf{15148} & \textbf{761,048} & \textbf{11.66} & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}

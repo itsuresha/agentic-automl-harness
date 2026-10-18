@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "16_three_strategies": true,
+    "17_maximum_share_60_percent": true,
+    "18_learning_rate_negative_mean": true,
+    "19_depth_negative_mean": true,
+    "20_all_strategy_fields": true,
+    "21_independent_labeler_recognizes_all_F3": true
+  },
+  "regression_checks": {
+    "F1_F2_records_unchanged_except_runtime": false,
+    "original_verifier_unchanged": true,
+    "features_unchanged": true
+  },
+  "strategy_counts": {
+    "clamp_n_est": 14,
+    "clamp_lr": 12,
+    "clamp_depth": 14
+  },
+  "per_strategy": {
+    "clamp_n_est": {
+      "attempted": 18,
+      "succeeded": 14,
+      "crashed": 0,
+      "n_measured": 14,
+      "mean_delta": -0.10175714285714285
+    },
+    "clamp_lr": {
+      "attempted": 17,
+      "succeeded": 12,
+      "crashed": 0,
+      "n_measured": 12,
+      "mean_delta": -0.1411583333333333
+    },
+    "clamp_depth": {
+      "attempted": 17,
+      "succeeded": 14,
+      "crashed": 0,
+      "n_measured": 14,
+      "mean_delta": -0.027473207958192462
+    },
+    "clamp_iter": {
+      "attempted": 0,
+      "succeeded": 0,
+      "crashed": 0,
+      "n_measured": 0,
+      "mean_delta": null
+    }
+  },
+  "independent_labeler_failures": [],
+  "original_verifier_sha256": "2605ff06f00e099af9dd45265a143aa75715240b57db44a279a30c1e889e254d",
+  "api_cost_usd": 0,
+  "status": "FAILED"
+}

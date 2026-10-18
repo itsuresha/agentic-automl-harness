@@ -1,0 +1,182 @@
+[
+  {
+    "dataset": "vehicle",
+    "step_idx": 19,
+    "fault_class": "F1",
+    "canonical_hash": "v2:212b8a3bdedec1c2",
+    "validation_score": 0.771,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\n\n# Prepare features and target\nX = df.drop(\"Class\", axis=1)\nle = LabelEncoder()\ny = le.fit_transform(df[\"Class\"])\n\n# Stratified 5-fold cross-validation\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nfor train_idx, val_idx in skf.split(X, y):\n    X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n    y_train, y_val = y[train_idx], y[val_idx]\n\n    # Train LightGBM with low learning rate, many trees, and early stopping\n    model = lgb.LGBMClassifier(\n        random_state=42, class_weight=\"balanced\", learning_rate=0.05, n_estimators=1000\n    )\n    model.fit(\n        X_train,\n        y_train,\n        eval_set=[(X_val, y_val)],\n        eval_metric=\"multi_logloss\",\n        callbacks=[\n            lgb.early_stopping(stopping_rounds=50),\n            lgb.log_evaluation(period=0),\n        ],\n    )\n\n    # Predict and evaluate\n    y_pred = model.predict(X_val)\n    f1 = f1_score(y_val, y_pred, average=\"macro\")\n    f1_scores.append(f1)\n\n# Print mean macro F1 score\nprint(f\"Mean Macro F1: {np.mean(f1_scores):.4f}\")",
+    "label_justification": "hash_seen_before=True; canonical_hash=v2:212b8a3bdedec1c2"
+  },
+  {
+    "dataset": "credit-approval",
+    "step_idx": 13,
+    "fault_class": "F1",
+    "canonical_hash": "v2:75e19531cb8182b3",
+    "validation_score": 0.8972,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.impute import SimpleImputer\nfrom sklearn.preprocessing import OneHotEncoder, StandardScaler\nfrom sklearn.metrics import f1_score\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.pipeline import Pipeline\nfrom lightgbm import LGBMClassifier\nimport lightgbm as lgb\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(\"class\", axis=1)\ny = df[\"class\"].map({\"+\": 1, \"-\": 0}).values\n\n# Identify numeric and categorical columns\nnum_cols = X.select_dtypes(include=[\"float64\", \"int64\"]).columns.tolist()\ncat_cols = X.select_dtypes(include=[\"object\"]).columns.tolist()\n\n# Preprocessing pipelines\nnum_pipeline = Pipeline(\n    [(\"imputer\", SimpleImputer(strategy=\"median\")), (\"scaler\", StandardScaler())]\n)\ncat_pipeline = Pipeline(\n    [\n        (\"imputer\", SimpleImputer(strategy=\"most_frequent\")),\n        (\"onehot\", OneHotEncoder(handle_unknown=\"ignore\", sparse_output=False)),\n    ]\n)\npreprocessor = ColumnTransformer(\n    [(\"num\", num_pipeline, num_cols), (\"cat\", cat_pipeline, cat_cols)]\n)\n\n# Stratified 5-fold CV with LightGBM and oversampling\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nscores = []\n\nfor train_idx, valid_idx in skf.split(X, y):\n    X_train, X_val = X.iloc[train_idx].reset_index(drop=True), X.iloc[valid_idx]\n    y_train, y_val = y[train_idx], y[valid_idx]\n\n    # Oversample minority class in the raw training set\n    classes, counts = np.unique(y_train, return_counts=True)\n    max_count = counts.max()\n    rows = []\n    labels = []\n    for cls, cnt in zip(classes, counts):\n        idx_cls = np.where(y_train == cls)[0]\n        if cnt < max_count:",
+    "label_justification": "hash_seen_before=True; canonical_hash=v2:75e19531cb8182b3"
+  },
+  {
+    "dataset": "diabetes",
+    "step_idx": 9,
+    "fault_class": "F1",
+    "canonical_hash": "v2:b39a90a334874c53",
+    "validation_score": 0.766,
+    "code_excerpt": "import pandas as pd\nimport numpy as np\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndata = pd.read_csv(\"./input/data.csv\")\nX = data.drop(columns=[\"class\"])\ny = data[\"class\"].map({\"tested_negative\": 0, \"tested_positive\": 1}).values\n\n# Stratified 5-fold cross-validation\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\nthresholds = []\n\nfor train_idx, valid_idx in skf.split(X, y):\n    X_train, X_valid = X.iloc[train_idx], X.iloc[valid_idx]\n    y_train, y_valid = y[train_idx], y[valid_idx]\n\n    # Train LightGBM with early stopping\n    model = lgb.LGBMClassifier(\n        n_estimators=1000,\n        learning_rate=0.05,\n        class_weight=\"balanced\",\n        random_state=42,\n        verbosity=-1,\n    )\n    model.fit(\n        X_train,\n        y_train,\n        eval_set=[(X_valid, y_valid)],\n        eval_metric=\"binary_logloss\",\n        callbacks=[\n            lgb.early_stopping(stopping_rounds=50),\n            lgb.log_evaluation(period=0),\n        ],\n    )\n\n    # Predict probabilities\n    proba = model.predict_proba(X_valid)[:, 1]\n    # Sweep thresholds to maximize macro F1\n    best_thr, best_f1 = 0.5, 0.0\n    for thr in np.linspace(0, 1, 101):\n        preds = (proba > thr).astype(int)\n        score = f1_score(y_valid, preds, average=\"macro\")\n        if score > best_f1:\n            best_f1 = score\n            best_thr = thr\n",
+    "label_justification": "hash_seen_before=False; canonical_hash=v2:b39a90a334874c53"
+  },
+  {
+    "dataset": "vehicle",
+    "step_idx": 16,
+    "fault_class": "F1",
+    "canonical_hash": "v2:01f1c16feaa53b05",
+    "validation_score": 0.6745,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(\"Class\", axis=1)\nle = LabelEncoder()\ny = le.fit_transform(df[\"Class\"])\n\n# Stratified 5-fold CV\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nfor train_idx, val_idx in skf.split(X, y):\n    X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n    y_train, y_val = y[train_idx], y[val_idx]\n\n    # Model with low learning rate and early stopping\n    model = lgb.LGBMClassifier(\n        random_state=42, n_estimators=1000, learning_rate=0.05, class_weight=\"balanced\"\n    )\n    model.fit(\n        X_train,\n        y_train,\n        eval_set=[(X_val, y_val)],\n        eval_metric=\"multi_logloss\",\n        callbacks=[\n            lgb.early_stopping(stopping_rounds=50),\n            lgb.log_evaluation(period=0),\n        ],\n    )\n\n    # Predict and evaluate\n    y_pred = model.predict(X_val)\n    f1 = f1_score(y_val, y_pred, average=\"macro\")\n    f1_scores.append(f1)\n\nprint(f\"Mean Macro F1: {np.mean(f1_scores):.4f}\")",
+    "label_justification": "hash_seen_before=False; canonical_hash=v2:01f1c16feaa53b05"
+  },
+  {
+    "dataset": "letter",
+    "step_idx": 16,
+    "fault_class": "F1",
+    "canonical_hash": "v2:86d3537ca95051f3",
+    "validation_score": 0.9711,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndata = pd.read_csv(\"./input/data.csv\")\nX = data.drop(\"class\", axis=1)\ny = LabelEncoder().fit_transform(data[\"class\"])\n\n# Stratified 5\u2010fold CV\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\nweights = []\n\nfor train_idx, val_idx in skf.split(X, y):\n    X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n    y_train, y_val = y[train_idx], y[val_idx]\n\n    # Model A: moderate complexity\n    model_a = lgb.LGBMClassifier(\n        learning_rate=0.05,\n        n_estimators=2000,\n        num_leaves=64,\n        feature_fraction=0.8,\n        bagging_fraction=0.8,\n        bagging_freq=1,\n        random_state=42,\n        n_jobs=-1,\n    )\n    model_a.fit(\n        X_train,\n        y_train,\n        eval_set=[(X_val, y_val)],\n        eval_metric=\"multi_logloss\",\n        callbacks=[lgb.early_stopping(stopping_rounds=100, verbose=False)],\n    )\n\n    # Model B: deeper, more capacity\n    model_b = lgb.LGBMClassifier(\n        learning_rate=0.03,\n        n_estimators=3000,\n        num_leaves=128,\n        max_depth=12,\n        feature_fraction=0.8,\n        bagging_fraction=0.8,\n        bagging_freq=1,\n        random_state=2021,",
+    "label_justification": "hash_seen_before=True; canonical_hash=v2:86d3537ca95051f3"
+  },
+  {
+    "dataset": "tic-tac-toe",
+    "step_idx": 8,
+    "fault_class": "F2",
+    "canonical_hash": "v2:2abd77d06fdfd0bc",
+    "validation_score": 0.9919,
+    "code_excerpt": "import pandas as pd\nimport numpy as np\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(\"Class\", axis=1).copy()\ny = (df[\"Class\"] == \"positive\").astype(int)\n\n# Parameters\nn_splits = 5\nrandom_state = 42\nalpha = 10  # smoothing parameter\n\nskf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=random_state)\nf1_scores = []\n\nfor train_idx, val_idx in skf.split(X, y):\n    X_train, X_val = X.iloc[train_idx].reset_index(drop=True), X.iloc[\n        val_idx\n    ].reset_index(drop=True)\n    y_train, y_val = y.iloc[train_idx].reset_index(drop=True), y.iloc[\n        val_idx\n    ].reset_index(drop=True)\n    global_mean = y_train.mean()\n\n    X_train_enc = pd.DataFrame(index=X_train.index)\n    X_val_enc = pd.DataFrame(index=X_val.index)\n\n    for col in X.columns:\n        stats = (\n            pd.DataFrame({col: X_train[col], \"target\": y_train})\n            .groupby(col)[\"target\"]\n            .agg([\"mean\", \"count\"])\n        )\n        # smoothing\n        smooth = (stats[\"mean\"] * stats[\"count\"] + alpha * global_mean) / (\n            stats[\"count\"] + alpha\n        )\n        # map smoothed values\n        X_train_enc[col + \"_te\"] = X_train[col].map(smooth)\n        X_val_enc[col + \"_te\"] = X_val[col].map(smooth).fillna(global_mean)\n\n    model = lgb.LGBMClassifier(random_state=random_state)\n    model.fit(X_train_enc, y_train)\n    preds = model.predict(X_val_enc)\n    f1_scores.append(f1_score(y_val, preds, average=\"macro\"))\n",
+    "label_justification": "leaky_before_split=False; preprocessing_before_split=False"
+  },
+  {
+    "dataset": "credit-approval",
+    "step_idx": 1,
+    "fault_class": "F2",
+    "canonical_hash": "v2:16bd6aa2fa799103",
+    "validation_score": 0.8591,
+    "code_excerpt": "import pandas as pd\nimport numpy as np\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.impute import SimpleImputer\nfrom sklearn.metrics import f1_score\nfrom lightgbm import LGBMClassifier\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\n\n# Separate features and target\nX = df.drop(\"class\", axis=1)\ny = df[\"class\"]\n\n# Encode target\nle_target = LabelEncoder()\ny = le_target.fit_transform(y)\n\n# Identify columns\nnumeric_cols = X.select_dtypes(include=[\"float64\", \"int64\"]).columns.tolist()\ncategorical_cols = X.select_dtypes(include=[\"object\"]).columns.tolist()\n\n# Impute numeric missing values with mean\nnum_imputer = SimpleImputer(strategy=\"mean\")\nX[numeric_cols] = num_imputer.fit_transform(X[numeric_cols])\n\n# Fill categorical missing and label-encode\nfor col in categorical_cols:\n    X[col] = X[col].fillna(\"missing\").astype(str)\n    le = LabelEncoder()\n    X[col] = le.fit_transform(X[col])\n\n# Convert to numpy\nX = X.values\ny = np.array(y)\n\n# Stratified 5-fold CV\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nfor train_idx, val_idx in skf.split(X, y):\n    X_train, X_val = X[train_idx], X[val_idx]\n    y_train, y_val = y[train_idx], y[val_idx]\n\n    model = LGBMClassifier(random_state=42)\n    model.fit(X_train, y_train)\n    preds = model.predict(X_val)\n    f1 = f1_score(y_val, preds, average=\"macro\")\n    f1_scores.append(f1)",
+    "label_justification": "leaky_before_split=True; preprocessing_before_split=True"
+  },
+  {
+    "dataset": "credit-g",
+    "step_idx": 4,
+    "fault_class": "F2",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "validation_score": 0.7473,
+    "code_excerpt": "import pandas as pd\nimport numpy as np\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndf = pd.read_csv(\"./input/credit-g.csv\")\nX_df = df.drop(columns=[\"class\"])\ny = df[\"class\"].map({\"good\": 1, \"bad\": 0}).values\n\n# Identify categorical columns\ncat_cols = X_df.select_dtypes(include=[\"object\"]).columns.tolist()\n\n# 5-fold stratified CV\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nsmoothing = 10  # smoothing factor for target encoding\n\nfor train_idx, val_idx in skf.split(X_df, y):\n    X_train_df = X_df.iloc[train_idx].copy().reset_index(drop=True)\n    X_val_df = X_df.iloc[val_idx].copy().reset_index(drop=True)\n    y_train = y[train_idx]\n    y_val = y[val_idx]\n\n    # Target encoding for each categorical column\n    prior = y_train.mean()\n    for col in cat_cols:\n        stats = (\n            pd.DataFrame({col: X_train_df[col], \"target\": y_train})\n            .groupby(col)[\"target\"]\n            .agg([\"mean\", \"count\"])\n        )\n        stats[\"enc\"] = (stats[\"mean\"] * stats[\"count\"] + prior * smoothing) / (\n            stats[\"count\"] + smoothing\n        )\n        mapping = stats[\"enc\"].to_dict()\n        X_train_df[col] = X_train_df[col].map(mapping).fillna(prior)\n        X_val_df[col] = X_val_df[col].map(mapping).fillna(prior)\n\n    # Prepare arrays\n    X_train = X_train_df.values\n    X_val = X_val_df.values\n\n    # Train LightGBM\n    model = lgb.LGBMClassifier(random_state=42)\n    model.fit(X_train, y_train)\n    preds = model.predict(X_val)\n",
+    "label_justification": "leaky_before_split=False; preprocessing_before_split=False"
+  },
+  {
+    "dataset": "jasmine",
+    "step_idx": 14,
+    "fault_class": "F2",
+    "canonical_hash": "v2:c6936b681bc3b5ff",
+    "validation_score": 0.8219,
+    "code_excerpt": "import pandas as pd\nimport numpy as np\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nfrom lightgbm import LGBMClassifier\nimport lightgbm as lgb\n\n# Load data\ndata = pd.read_csv(\"./input/data.csv\")\nX = data.drop(\"class\", axis=1)\ny = data[\"class\"]\nfeature_names = X.columns.tolist()\n\n# Prepare cross-validation\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nscores = []\nn_ensemble = 10  # Increased ensemble size\nfeature_fraction = 0.8\n\nfor train_idx, valid_idx in skf.split(X, y):\n    X_train, X_valid = X.iloc[train_idx], X.iloc[valid_idx]\n    y_train, y_valid = y.iloc[train_idx], y.iloc[valid_idx]\n\n    prob_sum = np.zeros(len(valid_idx))\n    for seed in range(n_ensemble):\n        rs = np.random.RandomState(seed)\n        # feature bagging\n        feat_idx = rs.choice(\n            len(feature_names),\n            size=int(feature_fraction * len(feature_names)),\n            replace=False,\n        )\n        feats = [feature_names[i] for i in feat_idx]\n        # row bootstrap sampling\n        row_idx = rs.choice(len(X_train), size=len(X_train), replace=True)\n        X_tr_boot = X_train.iloc[row_idx][feats]\n        y_tr_boot = y_train.iloc[row_idx]\n\n        model = LGBMClassifier(\n            n_estimators=1000, learning_rate=0.05, random_state=seed, n_jobs=-1\n        )\n        model.fit(\n            X_tr_boot,\n            y_tr_boot,\n            eval_set=[(X_valid[feats], y_valid)],\n            eval_metric=\"binary_logloss\",\n            callbacks=[\n                lgb.early_stopping(stopping_rounds=50),\n                lgb.log_evaluation(period=0),\n            ],",
+    "label_justification": "leaky_before_split=False; preprocessing_before_split=False"
+  },
+  {
+    "dataset": "Satellite",
+    "step_idx": 6,
+    "fault_class": "F2",
+    "canonical_hash": "v2:e49106d675293a6f",
+    "validation_score": 0.9967,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(columns=[\"Target\"])\ny = LabelEncoder().fit_transform(df[\"Target\"])\n\n# CV setup\ncv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nthresholds = np.linspace(0.01, 0.99, 99)\nscores = []\n\n# Ensemble hyperparameter settings: (random_state, num_leaves)\nensemble_params = [\n    (42, 64),\n    (52, 96),\n    (62, 128),\n]\n\nfor train_idx, valid_idx in cv.split(X, y):\n    X_train, X_valid = X.iloc[train_idx], X.iloc[valid_idx]\n    y_train, y_valid = y[train_idx], y[valid_idx]\n\n    # Aggregate probabilities from ensemble\n    proba_sum = np.zeros(len(y_valid), dtype=float)\n\n    for seed, leaves in ensemble_params:\n        model = lgb.LGBMClassifier(\n            n_estimators=10000,\n            learning_rate=0.01,\n            num_leaves=leaves,\n            max_depth=7,\n            subsample=0.8,\n            colsample_bytree=0.8,\n            random_state=seed,\n            n_jobs=-1,\n        )\n        model.fit(\n            X_train,\n            y_train,\n            eval_set=[(X_valid, y_valid)],\n            eval_metric=\"binary_logloss\",\n            callbacks=[\n                lgb.early_stopping(stopping_rounds=100),\n                lgb.log_evaluation(period=0),",
+    "label_justification": "leaky_before_split=True; preprocessing_before_split=True"
+  },
+  {
+    "dataset": "mfeat-morphological",
+    "step_idx": 6,
+    "fault_class": "F3",
+    "canonical_hash": "v2:38456d0db9981b98",
+    "validation_score": 0.7172,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nfrom lightgbm import LGBMClassifier\nimport lightgbm as lgb\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(\"class\", axis=1)\ny = df[\"class\"].astype(int) - 1  # zero\u2010based labels\n\n# Stratified 5\u2010fold CV with increased complexity\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nfor train_idx, val_idx in skf.split(X, y):\n    X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n    y_train, y_val = y.iloc[train_idx], y.iloc[val_idx]\n\n    model = LGBMClassifier(\n        objective=\"multiclass\",\n        num_class=10,\n        random_state=42,\n        learning_rate=0.05,\n        n_estimators=1000,\n        num_leaves=64,\n        max_depth=8,\n    )\n    model.fit(\n        X_train,\n        y_train,\n        eval_set=[(X_val, y_val)],\n        eval_metric=\"multi_logloss\",\n        callbacks=[\n            lgb.early_stopping(stopping_rounds=50),\n            lgb.log_evaluation(period=0),\n        ],\n    )\n    y_pred = model.predict(X_val)\n    f1 = f1_score(y_val, y_pred, average=\"macro\")\n    f1_scores.append(f1)\n\nprint(f\"Mean Macro F1: {np.mean(f1_scores):.4f}\")",
+    "label_justification": "training-budget fault label; wall_clock_sec=23.419559955596924; validation_score=0.7172"
+  },
+  {
+    "dataset": "mfeat-fourier",
+    "step_idx": 14,
+    "fault_class": "F3",
+    "canonical_hash": "v2:f11fa9e1655a6cff",
+    "validation_score": 0.725,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.metrics import f1_score\nfrom lightgbm import LGBMClassifier\nimport lightgbm as lgb\n\n\ndef main():\n    # Load data\n    df = pd.read_csv(\"./input/data.csv\")\n    X = df.drop(\"class\", axis=1).values\n    y = df[\"class\"].values\n\n    # Stratified 5-fold CV\n    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\n    f1_scores = []\n\n    for train_idx, val_idx in skf.split(X, y):\n        X_train, X_val = X[train_idx], X[val_idx]\n        y_train, y_val = y[train_idx], y[val_idx]\n\n        # Scale features within fold to avoid leakage\n        scaler = StandardScaler()\n        X_train_scaled = scaler.fit_transform(X_train)\n        X_val_scaled = scaler.transform(X_val)\n\n        # Tuned LightGBM classifier with early stopping\n        model = LGBMClassifier(\n            n_estimators=1000,\n            learning_rate=0.05,\n            num_leaves=64,\n            max_depth=10,\n            subsample=0.8,\n            colsample_bytree=0.8,\n            reg_alpha=0.1,\n            reg_lambda=0.1,\n            random_state=42,\n            objective=\"multiclass\",\n            n_jobs=-1,\n        )\n        model.fit(\n            X_train_scaled,\n            y_train,\n            eval_set=[(X_val_scaled, y_val)],\n            eval_metric=\"multi_logloss\",\n            callbacks=[lgb.early_stopping(stopping_rounds=50), lgb.log_evaluation(0)],\n        )\n",
+    "label_justification": "training-budget fault label; wall_clock_sec=20.23405122756958; validation_score=0.725"
+  },
+  {
+    "dataset": "amazon-commerce-reviews",
+    "step_idx": 10,
+    "fault_class": "F3",
+    "canonical_hash": "v2:3d50dffaa5fa3bb2",
+    "validation_score": 0.12530525151902785,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.feature_selection import VarianceThreshold\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(\"Class\", axis=1)\ny = df[\"Class\"]\n\n# Remove constant features\nselector = VarianceThreshold(threshold=0.0)\nX_reduced = selector.fit_transform(X)\n\n# Prepare cross-validation\nn_splits = 5\nskf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)\nscores = []\n\n# Cross-validation loop\nfor train_idx, val_idx in skf.split(X_reduced, y):\n    X_train, X_val = X_reduced[train_idx], X_reduced[val_idx]\n    y_train, y_val = y.iloc[train_idx], y.iloc[val_idx]\n\n    # Train LightGBM classifier using one-vs-all objective\n    clf = lgb.LGBMClassifier(\n        objective=\"multiclassova\",\n        num_class=len(np.unique(y)),\n        learning_rate=0.05,\n        n_estimators=2000,\n        random_state=42,\n        n_jobs=-1,\n    )\n    clf.fit(\n        X_train,\n        y_train,\n        eval_set=[(X_val, y_val)],\n        eval_metric=\"multi_logloss\",\n        callbacks=[lgb.early_stopping(stopping_rounds=50)],\n    )\n\n    # Predict and evaluate\n    y_pred = clf.predict(X_val, num_iteration=clf.best_iteration_)\n    score = f1_score(y_val, y_pred, average=\"macro\")\n    scores.append(score)\n\n# Print mean macro F1\nprint(\"Mean CV macro F1:\", np.mean(scores))",
+    "label_justification": "training-budget fault label; wall_clock_sec=185.4089391231537; validation_score=0.12530525151902785"
+  },
+  {
+    "dataset": "diabetes",
+    "step_idx": 15,
+    "fault_class": "F3",
+    "canonical_hash": "v2:7d1b8740c0c7d483",
+    "validation_score": 0.6989,
+    "code_excerpt": "import pandas as pd\nimport numpy as np\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndata = pd.read_csv(\"./input/data.csv\")\nX = data.drop(columns=[\"class\"])\ny = data[\"class\"].map({\"tested_negative\": 0, \"tested_positive\": 1}).values\n\n# Stratified 5-fold cross-validation\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\nthresholds = []\n\nfor fold, (train_idx, valid_idx) in enumerate(skf.split(X, y), 1):\n    X_train, X_valid = X.iloc[train_idx], X.iloc[valid_idx]\n    y_train, y_valid = y[train_idx], y[valid_idx]\n\n    # Tuned LightGBM parameters\n    model = lgb.LGBMClassifier(\n        n_estimators=10000,\n        learning_rate=0.01,\n        num_leaves=64,\n        max_depth=8,\n        colsample_bytree=0.8,\n        subsample=0.8,\n        subsample_freq=1,\n        reg_alpha=0.1,\n        reg_lambda=0.1,\n        class_weight=\"balanced\",\n        random_state=42,\n        verbosity=-1,\n    )\n    model.fit(\n        X_train,\n        y_train,\n        eval_set=[(X_valid, y_valid)],\n        eval_metric=\"binary_logloss\",\n        callbacks=[\n            lgb.early_stopping(stopping_rounds=100),\n            lgb.log_evaluation(period=0),\n        ],\n    )\n\n    # Predict probabilities\n    proba = model.predict_proba(X_valid, num_iteration=model.best_iteration_)[:, 1]\n\n    # Sweep thresholds to maximize macro F1",
+    "label_justification": "training-budget fault label; wall_clock_sec=7.742630481719971; validation_score=0.6989"
+  },
+  {
+    "dataset": "pendigits",
+    "step_idx": 13,
+    "fault_class": "F3",
+    "canonical_hash": "v2:e3dd11a8fa76d86a",
+    "validation_score": 0.9806,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n\ndef main():\n    # Load data\n    data = pd.read_csv(\"./input/data.csv\")\n    X = data.drop(\"class\", axis=1)\n    y = data[\"class\"].values\n\n    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\n    scores = []\n    seeds = [42, 2021]\n\n    for train_idx, val_idx in skf.split(X, y):\n        X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n        y_train, y_val = y[train_idx], y[val_idx]\n\n        preds_proba = np.zeros((X_val.shape[0], len(np.unique(y))))\n        for seed in seeds:\n            model = lgb.LGBMClassifier(\n                random_state=seed,\n                n_estimators=5000,\n                learning_rate=0.05,\n                verbosity=-1,\n                bagging_fraction=0.8,\n                bagging_freq=1,\n                feature_fraction=0.8,\n            )\n            model.fit(\n                X_train,\n                y_train,\n                eval_set=[(X_val, y_val)],\n                eval_metric=\"multi_logloss\",\n                callbacks=[\n                    lgb.early_stopping(stopping_rounds=100),\n                    lgb.log_evaluation(period=0),\n                ],\n            )\n            best_iter = model.best_iteration_\n            preds_proba += model.predict_proba(X_val, num_iteration=best_iter)\n\n        preds_proba /= len(seeds)\n        y_pred = np.argmax(preds_proba, axis=1)\n        scores.append(f1_score(y_val, y_pred, average=\"macro\"))\n\n    print(f\"Mean macro F1: {np.mean(scores):.4f}\")",
+    "label_justification": "training-budget fault label; wall_clock_sec=179.4831519126892; validation_score=0.9806"
+  },
+  {
+    "dataset": "mfeat-zernike",
+    "step_idx": 0,
+    "fault_class": "clean",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "validation_score": 0.7833,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.metrics import f1_score\nfrom lightgbm import LGBMClassifier\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(\"class\", axis=1)\ny = df[\"class\"]\n\n# Encode target to 0-9\nle = LabelEncoder()\ny_enc = le.fit_transform(y)\n\n# Stratified 5-fold CV\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nfor train_idx, val_idx in skf.split(X, y_enc):\n    X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n    y_train, y_val = y_enc[train_idx], y_enc[val_idx]\n\n    # Train LightGBM classifier\n    model = LGBMClassifier(random_state=42)\n    model.fit(X_train, y_train)\n\n    # Predict and evaluate\n    y_pred = model.predict(X_val)\n    score = f1_score(y_val, y_pred, average=\"macro\")\n    f1_scores.append(score)\n\n# Print mean macro F1 score\nprint(f\"Mean macro F1: {np.mean(f1_scores):.4f}\")",
+    "label_justification": "No fault criteria met."
+  },
+  {
+    "dataset": "letter",
+    "step_idx": 3,
+    "fault_class": "clean",
+    "canonical_hash": "v2:5bed080adde5ef98",
+    "validation_score": 0.9663,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndata = pd.read_csv(\"./input/data.csv\")\nX = data.drop(\"class\", axis=1)\ny = LabelEncoder().fit_transform(data[\"class\"])\n\n# CV settings\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\nseeds = [42, 52, 62]\n\nfor fold, (train_idx, val_idx) in enumerate(skf.split(X, y), 1):\n    X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n    y_train, y_val = y[train_idx], y[val_idx]\n\n    # Collect predictions from multiple seeds\n    val_preds = np.zeros((X_val.shape[0], len(np.unique(y))))\n    for seed in seeds:\n        model = lgb.LGBMClassifier(\n            learning_rate=0.05, n_estimators=1000, random_state=seed, n_jobs=-1\n        )\n        model.fit(\n            X_train,\n            y_train,\n            eval_set=[(X_val, y_val)],\n            eval_metric=\"multi_logloss\",\n            callbacks=[lgb.early_stopping(stopping_rounds=50, verbose=False)],\n        )\n        val_preds += model.predict_proba(X_val)\n\n    # Average probabilities and get final preds\n    val_preds /= len(seeds)\n    preds = np.argmax(val_preds, axis=1)\n    f1 = f1_score(y_val, preds, average=\"macro\")\n    f1_scores.append(f1)\n    print(f\"Fold {fold} F1: {f1:.4f}\")\n\n# Output mean macro F1\nprint(f\"Mean CV Macro F1: {np.mean(f1_scores):.4f}\")",
+    "label_justification": "No fault criteria met."
+  },
+  {
+    "dataset": "diabetes",
+    "step_idx": 1,
+    "fault_class": "clean",
+    "canonical_hash": "v2:60db59f4b7b7c0fe",
+    "validation_score": 0.7261,
+    "code_excerpt": "import pandas as pd\nimport numpy as np\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nimport lightgbm as lgb\n\n# Load data\ndata = pd.read_csv(\"./input/data.csv\")\n\n# Prepare features and target\nX = data.drop(columns=[\"class\"])\ny = data[\"class\"].map({\"tested_negative\": 0, \"tested_positive\": 1}).values\n\n# Stratified 5-fold cross-validation\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nfor train_idx, valid_idx in skf.split(X, y):\n    X_train, X_valid = X.iloc[train_idx], X.iloc[valid_idx]\n    y_train, y_valid = y[train_idx], y[valid_idx]\n\n    # Train LightGBM with balanced class weights\n    model = lgb.LGBMClassifier(random_state=42, class_weight=\"balanced\")\n    model.fit(X_train, y_train)\n\n    # Predict and evaluate\n    preds = model.predict(X_valid)\n    score = f1_score(y_valid, preds, average=\"macro\")\n    f1_scores.append(score)\n\n# Output mean macro F1\nmean_f1 = np.mean(f1_scores)\nprint(f\"Mean Macro F1: {mean_f1:.4f}\")",
+    "label_justification": "No fault criteria met."
+  },
+  {
+    "dataset": "mfeat-morphological",
+    "step_idx": 0,
+    "fault_class": "clean",
+    "canonical_hash": "v2:d51fff3622b2d285",
+    "validation_score": 0.6939,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nfrom lightgbm import LGBMClassifier\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(\"class\", axis=1)\ny = df[\"class\"].astype(int) - 1  # zero\u2010based labels\n\n# Stratified 5\u2010fold CV\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nfor train_idx, val_idx in skf.split(X, y):\n    X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n    y_train, y_val = y.iloc[train_idx], y.iloc[val_idx]\n\n    model = LGBMClassifier(objective=\"multiclass\", num_class=10, random_state=42)\n    model.fit(X_train, y_train)\n    y_pred = model.predict(X_val)\n\n    f1 = f1_score(y_val, y_pred, average=\"macro\")\n    f1_scores.append(f1)\n\nprint(f\"Mean Macro F1: {np.mean(f1_scores):.4f}\")",
+    "label_justification": "No fault criteria met."
+  },
+  {
+    "dataset": "mfeat-zernike",
+    "step_idx": 9,
+    "fault_class": "clean",
+    "canonical_hash": "v2:bc146fbf04f33649",
+    "validation_score": 0.7705,
+    "code_excerpt": "import numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.metrics import f1_score\nfrom lightgbm import LGBMClassifier\n\n# Load data\ndf = pd.read_csv(\"./input/data.csv\")\nX = df.drop(\"class\", axis=1)\ny = df[\"class\"]\n\n# Encode target to 0-9\nle = LabelEncoder()\ny_enc = le.fit_transform(y)\n\n# Stratified 5-fold CV\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nf1_scores = []\n\nfor train_idx, val_idx in skf.split(X, y_enc):\n    X_train, X_val = X.iloc[train_idx], X.iloc[val_idx]\n    y_train, y_val = y_enc[train_idx], y_enc[val_idx]\n\n    # Train LightGBM classifier with DART boosting\n    model = LGBMClassifier(\n        random_state=42, boosting_type=\"dart\", drop_rate=0.1, skip_drop=0.5\n    )\n    model.fit(X_train, y_train)\n\n    # Predict and evaluate\n    y_pred = model.predict(X_val)\n    score = f1_score(y_val, y_pred, average=\"macro\")\n    f1_scores.append(score)\n\n# Print mean macro F1 score\nprint(f\"Mean macro F1: {np.mean(f1_scores):.4f}\")",
+    "label_justification": "No fault criteria met."
+  }
+]

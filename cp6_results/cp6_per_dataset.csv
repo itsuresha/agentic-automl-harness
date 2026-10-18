@@ -1,0 +1,7 @@
+dataset,n_steps,n_faulty,gate_fsr,gate_tp,gate_fp,gate_fn,monitor_fsr,net_savings_pct
+ada,17,11,0.1818,9,4,2,0.1818,-11.76
+fabert,17,12,0.0,12,0,0,0.0,74.88
+philippine,13,10,0.0,10,3,0,0.1,82.92
+sylvine,17,12,0.1667,10,5,2,0.25,48.94
+wine-quality-white,12,5,0.0,5,1,0,0.0,62.51
+yeast,13,4,0.0,4,1,0,0.0,19.29

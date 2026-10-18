@@ -1,0 +1,18 @@
+dataset_name,openml_id,group,status,n_rows,n_features,n_classes,best_metric,wall_clock_sec,total_tokens,api_cost_usd,n_successful_steps,n_buggy_steps,completed_steps,trace_fidelity,error_reason
+credit-g,31,cc18,SUCCESS,1000,20,2,0.7203,696.671,126586,0.2309571,17,3,20,legacy_rich_reconstruction,none
+diabetes,37,cc18,SUCCESS,768,8,2,0.7687,415.66176941699814,112946,0.20967800000000003,15,5,20,structured_api_capture,none
+tic-tac-toe,50,cc18,SUCCESS,958,9,2,1.0,403.8311071250064,119578,0.2268052,16,4,20,structured_api_capture,none
+vehicle,54,cc18,SUCCESS,846,18,4,0.7596,727.5149358750059,107747,0.2112043,12,8,20,structured_api_capture,none
+credit-approval,29,cc18,SUCCESS,690,15,2,0.8972,520.1364870409889,126363,0.2407718,13,7,20,structured_api_capture,none
+kr-vs-kp,3,cc18,SUCCESS,3196,36,2,0.9966,932.2862047920062,146794,0.27071500000000004,19,1,20,structured_api_capture,none
+mfeat-factors,12,cc18,SUCCESS,2000,216,10,0.9645,2621.0982629999926,94864,0.1816703,10,10,20,structured_api_capture,none
+mfeat-fourier,14,cc18,SUCCESS,2000,76,10,0.8437,2424.449904292007,132182,0.2377885,14,6,20,structured_api_capture,none
+mfeat-morphological,18,cc18,SUCCESS,2000,6,10,0.7409,840.0536489580118,105778,0.2085825,8,12,20,structured_api_capture,none
+mfeat-zernike,22,cc18,SUCCESS,2000,47,10,0.789,5824.374617500012,107899,0.2011679,14,6,20,structured_api_capture,none
+pendigits,32,cc18,SUCCESS,10992,16,10,0.9942,1306.3261096250062,102803,0.20419730000000003,14,6,20,structured_api_capture,none
+letter,6,cc18,SUCCESS,20000,16,26,0.9711,9115.071716124992,116883,0.2193045,10,10,20,structured_api_capture,none
+jasmine,41143,transfer,SUCCESS,2984,144,2,0.8225,963.016160166997,109238,0.2013907,13,7,20,structured_api_capture,none
+amazon-commerce-reviews,1457,transfer,SUCCESS,1500,10000,50,0.7220848014730368,3082.9306898330105,105264,0.2051505,4,16,20,structured_api_capture,none
+Satellite,40900,transfer,SUCCESS,5100,36,2,0.9142,1509.681454000005,138591,0.2503018,17,3,20,structured_api_capture,none
+micro-mass,1515,transfer,FAILED,571,1300,20,0.8795,212.13149337499635,27697,0.061169100000000004,2,5,7,structured_api_capture,APIConnectionError: Connection error.
+christine,41142,transfer,SUCCESS,5418,1636,2,0.756,4450.5218704169965,111589,0.21028380000000002,12,8,20,structured_api_capture,none

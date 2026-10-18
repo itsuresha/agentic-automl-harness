@@ -1,0 +1,85 @@
+{
+  "datasets": [
+    {
+      "api_cost_usd": 1.6026732,
+      "best_metric": 0.9549,
+      "completed_steps": 20,
+      "dataset_name": "sylvine",
+      "error_reason": "none",
+      "n_buggy_steps": 3,
+      "n_successful_steps": 17,
+      "openml_id": 41146,
+      "status": "SUCCESS",
+      "total_tokens": 123891,
+      "wall_clock_sec": 962.4217223330052
+    },
+    {
+      "api_cost_usd": 1.9554975999999993,
+      "best_metric": 0.4183,
+      "completed_steps": 20,
+      "dataset_name": "wine-quality-white",
+      "error_reason": "none",
+      "n_buggy_steps": 8,
+      "n_successful_steps": 12,
+      "openml_id": 40498,
+      "status": "SUCCESS",
+      "total_tokens": 112360,
+      "wall_clock_sec": 3524.7257641250035
+    },
+    {
+      "api_cost_usd": 1.8705311999999996,
+      "best_metric": 0.77768,
+      "completed_steps": 20,
+      "dataset_name": "philippine",
+      "error_reason": "none",
+      "n_buggy_steps": 7,
+      "n_successful_steps": 13,
+      "openml_id": 41145,
+      "status": "SUCCESS",
+      "total_tokens": 120555,
+      "wall_clock_sec": 2028.2736375420063
+    },
+    {
+      "api_cost_usd": 1.8933180000000003,
+      "best_metric": 0.70311,
+      "completed_steps": 20,
+      "dataset_name": "fabert",
+      "error_reason": "none",
+      "n_buggy_steps": 3,
+      "n_successful_steps": 17,
+      "openml_id": 41164,
+      "status": "SUCCESS",
+      "total_tokens": 113829,
+      "wall_clock_sec": 1751.365790416021
+    },
+    {
+      "api_cost_usd": 2.442326399999999,
+      "best_metric": 0.8271,
+      "completed_steps": 20,
+      "dataset_name": "ada",
+      "error_reason": "none",
+      "n_buggy_steps": 3,
+      "n_successful_steps": 17,
+      "openml_id": 41156,
+      "status": "SUCCESS",
+      "total_tokens": 170934,
+      "wall_clock_sec": 4039.696756874997
+    },
+    {
+      "api_cost_usd": 1.8946024000000001,
+      "best_metric": 0.5472,
+      "completed_steps": 20,
+      "dataset_name": "yeast",
+      "error_reason": "none",
+      "n_buggy_steps": 7,
+      "n_successful_steps": 13,
+      "openml_id": 181,
+      "status": "SUCCESS",
+      "total_tokens": 119479,
+      "wall_clock_sec": 2841.6074975420197
+    }
+  ],
+  "estimated_api_cost_usd": 11.994412400000002,
+  "note": "Provider billing is authoritative; this is local token-based estimation.",
+  "updated_at": "2026-09-15T20:38:43+00:00"
+}

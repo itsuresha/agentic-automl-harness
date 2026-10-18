@@ -1,0 +1,21 @@
+{
+  "canonical_hash_version": "v2",
+  "feature_tiers": {
+    "canonical_hash": 1,
+    "model_class": 1,
+    "n_hyperparams": 1,
+    "n_preprocessing_steps": 1,
+    "preprocessing_before_split": 1,
+    "leaky_before_split": 1,
+    "hash_seen_before": 1,
+    "hash_first_seen_at": 1,
+    "parse_quality": 1,
+    "validation_score": 2,
+    "wall_clock_sec": 2,
+    "score_delta_from_prev": 2,
+    "score_rank_in_run": 2,
+    "is_best_so_far": 2,
+    "steps_since_improvement": 2
+  },
+  "row_count": 208
+}

@@ -1,0 +1,7 @@
+fault_class,n_total,caught,missed,recall,tier
+F1,33,31,2,0.9394,gate
+F2,12,12,0,1.0,gate
+F3,18,14,4,0.7778,gate
+F1,33,30,3,0.9091,monitor
+F2,12,12,0,1.0,monitor
+F3,18,13,5,0.7222,monitor

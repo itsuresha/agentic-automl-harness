@@ -1,0 +1,27 @@
+# environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+*.key
+
+# generated runtime state and large intermediates
+artifacts/
+data/cache/
+results/history/
+*.pkl
+batch.lock
+
+# raw agent traces are large; publish them separately in a data repository
+traces/raw/
+aide_runs/
+
+# vendored scaffold internals
+vendor/aideml/.git/
+vendor/aideml/__pycache__/
+vendor/aideml/**/*.pyc
+
+# superseded backups
+*_backup_*
+*backup_pre_*

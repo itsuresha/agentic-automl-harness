@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "Harness Engineering for Agentic AutoML"
+message: "If you use this software or data, please cite the accompanying paper."
+type: software
+authors:
+  - given-names: Suresh
+    family-names: Arumugam
+    orcid: "https://orcid.org/0000-0001-6589-8390"
+    affiliation: "Dayananda Sagar University, Bengaluru, India"
+  - given-names: Kiat Siong
+    family-names: Ng
+    affiliation: "National Yunlin University of Science and Technology, Taiwan"
+  - given-names: S.
+    family-names: Satyanarayana
+    affiliation: "Sanjivani University, India"
+license: MIT
+repository-code: "https://github.com/itsuresha/agentic-automl-harness"
+abstract: >-
+  A conformal trial-gating watcher for LLM-driven AutoML agents that decides
+  before each trial whether to run or skip it, with a distribution-free
+  false-skip-rate guarantee derived from validation scores, canonical
+  configuration hashes and execution metadata.
+keywords:
+  - AutoML
+  - LLM agents
+  - runtime monitoring
+  - conformal risk control
+  - data leakage

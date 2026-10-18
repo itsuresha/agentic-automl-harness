@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "taxonomy": {
+    "F1": {
+      "name": "Redundant Configuration Proposal",
+      "abbreviation": "RCP",
+      "definition": "A step whose canonical configuration hash matches an earlier step in the same AIDE run.",
+      "origin": "natural",
+      "detection_basis": "Pre-execution (Tier 1): canonical hash comparison against run history.",
+      "subtypes": null,
+      "count_in_corpus": 64
+    },
+    "F2": {
+      "name": "Data Leakage",
+      "abbreviation": "DL",
+      "definition": "Preprocessing or target-aware transformation is fitted before the train-test split.",
+      "origin": "natural + synthetic",
+      "detection_basis": "Pre-execution (Tier 1): AST analysis of code for fit-before-split pattern.",
+      "subtypes": {
+        "natural": "Detected via code analysis in original generated code.",
+        "synthetic": "Injected by inserting target-aware leakage before split."
+      },
+      "count_in_corpus": {
+        "natural": 15,
+        "synthetic": 25,
+        "total": 40
+      }
+    },
+    "F3": {
+      "name": "Training-Budget Fault",
+      "abbreviation": "TBF",
+      "definition": "Training hyperparameters are clamped to degenerate values while execution still succeeds.",
+      "origin": "synthetic only",
+      "detection_basis": "Mixed: config inspection (Tier 1) plus anomalous score/time evidence (Tier 2).",
+      "subtypes": {
+        "clamp_iter": 1,
+        "clamp_n_est": 12,
+        "clamp_lr": 15,
+        "clamp_depth": 12
+      },
+      "count_in_corpus": {
+        "clamp_iter": 1,
+        "clamp_n_est": 12,
+        "clamp_lr": 15,
+        "clamp_depth": 12,
+        "total": 40
+      }
+    }
+  },
+  "column_convention": "Internal column names remain F1, F2, F3 for code compatibility."
+}

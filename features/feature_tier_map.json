@@ -1,0 +1,36 @@
+{
+  "_description": "Feature tier classification for temporal-causality compliance",
+  "_tier_1": "Pre-execution: available from code, config, and history before running the step",
+  "_tier_2": "Post-execution: requires running the step to observe",
+  "tiers": {
+    "canonical_hash": 1,
+    "model_class": 1,
+    "n_hyperparams": 1,
+    "n_preprocessing_steps": 1,
+    "preprocessing_before_split": 1,
+    "leaky_before_split": 1,
+    "hash_seen_before": 1,
+    "hash_first_seen_at": 1,
+    "parse_quality": 1,
+    "validation_score": 2,
+    "wall_clock_sec": 2,
+    "score_delta_from_prev": 2,
+    "score_rank_in_run": 2,
+    "is_best_so_far": 2,
+    "steps_since_improvement": 2
+  },
+  "derived": {
+    "score_rank_pct": {
+      "tier": 2,
+      "source": "score_rank_in_run"
+    },
+    "wall_clock_rank_pct": {
+      "tier": 2,
+      "source": "wall_clock_sec"
+    },
+    "within_run_z": {
+      "tier": 2,
+      "source": "validation_score"
+    }
+  }
+}

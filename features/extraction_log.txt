@@ -1,0 +1,255 @@
+SKIP micro-mass: status=FAILED completed=7
+PARSE credit-g step 0 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 0 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE credit-g step 1 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 1 [full_ast]: preprocessing fit at line 17 precedes split at line 21 (vocabulary-only)
+PARSE credit-g step 3 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 3 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE credit-g step 6 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 6 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE credit-g step 8 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 8 [full_ast]: preprocessing fit at line 16 precedes split at line 35 (vocabulary-only)
+PARSE credit-g step 9 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 9 [full_ast]: preprocessing fit at line 17 precedes split at line 24 (vocabulary-only)
+PARSE credit-g step 10 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 10 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE credit-g step 11 [full_ast]: line 22: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 11 [full_ast]: preprocessing fit at line 22 precedes split at line 26 (vocabulary-only)
+PARSE credit-g step 13 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 13 [full_ast]: preprocessing fit at line 17 precedes split at line 21 (vocabulary-only)
+PARSE credit-g step 14 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 14 [full_ast]: preprocessing fit at line 17 precedes split at line 22 (vocabulary-only)
+PARSE credit-g step 15 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 15 [full_ast]: preprocessing fit at line 17 precedes split at line 22 (vocabulary-only)
+PARSE credit-g step 16 [full_ast]: line 22: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 16 [full_ast]: preprocessing fit at line 22 precedes split at line 27 (vocabulary-only)
+PARSE credit-g step 17 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 17 [full_ast]: preprocessing fit at line 17 precedes split at line 22 (vocabulary-only)
+PARSE credit-g step 18 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 18 [full_ast]: preprocessing fit at line 16 precedes split at line 22 (vocabulary-only)
+PARSE credit-g step 19 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-g step 19 [full_ast]: preprocessing fit at line 16 precedes split at line 22 (vocabulary-only)
+PARSE tic-tac-toe step 1 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE tic-tac-toe step 1 [full_ast]: preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)
+PARSE tic-tac-toe step 3 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE tic-tac-toe step 3 [full_ast]: preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)
+PARSE tic-tac-toe step 16 [partial_ast]: no model class identified
+PARSE tic-tac-toe step 17 [partial_ast]: no model class identified
+PARSE tic-tac-toe step 18 [partial_ast]: no model class identified
+PARSE tic-tac-toe step 19 [partial_ast]: no model class identified
+PARSE vehicle step 0 [full_ast]: line 14: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 0 [full_ast]: preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)
+PARSE vehicle step 1 [full_ast]: line 14: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 1 [full_ast]: preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)
+PARSE vehicle step 3 [full_ast]: line 14: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 3 [full_ast]: preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)
+PARSE vehicle step 8 [full_ast]: line 14: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 8 [full_ast]: preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)
+PARSE vehicle step 10 [full_ast]: line 14: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 10 [full_ast]: preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)
+PARSE vehicle step 11 [full_ast]: line 14: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 11 [full_ast]: preprocessing fit at line 14 precedes split at line 18 (vocabulary-only)
+PARSE vehicle step 13 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 13 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE vehicle step 14 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 14 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE vehicle step 16 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 16 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE vehicle step 17 [full_ast]: line 14: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 17 [full_ast]: preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)
+PARSE vehicle step 18 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 18 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE vehicle step 19 [full_ast]: line 14: LabelEncoder is vocabulary-only, not a leakage source
+PARSE vehicle step 19 [full_ast]: preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)
+PARSE credit-approval step 1 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-approval step 1 [full_ast]: line 32: LabelEncoder is vocabulary-only, not a leakage source
+PARSE credit-approval step 1 [full_ast]: leaking preprocessing fit at line 26 precedes split at line 39
+PARSE kr-vs-kp step 0 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 0 [full_ast]: line 20: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 0 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE kr-vs-kp step 2 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 2 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 2 [full_ast]: preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)
+PARSE kr-vs-kp step 3 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 3 [full_ast]: line 20: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 3 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE kr-vs-kp step 4 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 4 [full_ast]: line 20: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 4 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE kr-vs-kp step 5 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 5 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 5 [full_ast]: preprocessing fit at line 15 precedes split at line 39 (vocabulary-only)
+PARSE kr-vs-kp step 6 [full_ast]: line 21: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 6 [full_ast]: preprocessing fit at line 21 precedes split at line 24 (vocabulary-only)
+PARSE kr-vs-kp step 8 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 8 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 8 [full_ast]: preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)
+PARSE kr-vs-kp step 9 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 9 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 9 [full_ast]: preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)
+PARSE kr-vs-kp step 10 [full_ast]: line 22: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 10 [full_ast]: line 25: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 10 [full_ast]: preprocessing fit at line 22 precedes split at line 28 (vocabulary-only)
+PARSE kr-vs-kp step 11 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 11 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 11 [full_ast]: preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)
+PARSE kr-vs-kp step 12 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 12 [full_ast]: line 20: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 12 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE kr-vs-kp step 13 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 13 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 13 [full_ast]: preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)
+PARSE kr-vs-kp step 14 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 14 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 14 [full_ast]: preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)
+PARSE kr-vs-kp step 15 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 15 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 15 [full_ast]: preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)
+PARSE kr-vs-kp step 16 [full_ast]: line 20: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 16 [full_ast]: line 23: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 16 [full_ast]: preprocessing fit at line 20 precedes split at line 26 (vocabulary-only)
+PARSE kr-vs-kp step 17 [full_ast]: line 18: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 17 [full_ast]: line 21: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 17 [full_ast]: preprocessing fit at line 18 precedes split at line 24 (vocabulary-only)
+PARSE kr-vs-kp step 18 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 18 [full_ast]: line 20: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 18 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE kr-vs-kp step 19 [full_ast]: line 17: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 19 [full_ast]: line 20: LabelEncoder is vocabulary-only, not a leakage source
+PARSE kr-vs-kp step 19 [full_ast]: preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)
+PARSE mfeat-factors step 0 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 0 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 7 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 7 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 8 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 8 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 9 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 9 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 10 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 10 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 11 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 11 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 14 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 14 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 15 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 15 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 16 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 16 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-factors step 17 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-factors step 17 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-fourier step 0 [full_ast]: leaking preprocessing fit at line 17 precedes split at line 20
+PARSE mfeat-fourier step 2 [full_ast]: leaking preprocessing fit at line 17 precedes split at line 20
+PARSE mfeat-fourier step 3 [full_ast]: leaking preprocessing fit at line 24 precedes split at line 27
+PARSE mfeat-fourier step 4 [full_ast]: leaking preprocessing fit at line 18 precedes split at line 31
+PARSE mfeat-fourier step 5 [full_ast]: leaking preprocessing fit at line 18 precedes split at line 21
+PARSE mfeat-fourier step 7 [full_ast]: leaking preprocessing fit at line 17 precedes split at line 20
+PARSE mfeat-fourier step 9 [full_ast]: leaking preprocessing fit at line 18 precedes split at line 21
+PARSE mfeat-fourier step 10 [full_ast]: leaking preprocessing fit at line 17 precedes split at line 20
+PARSE mfeat-fourier step 12 [full_ast]: leaking preprocessing fit at line 17 precedes split at line 20
+PARSE mfeat-fourier step 13 [full_ast]: leaking preprocessing fit at line 17 precedes split at line 20
+PARSE mfeat-zernike step 0 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 0 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 1 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 1 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 3 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 3 [full_ast]: preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)
+PARSE mfeat-zernike step 5 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 5 [full_ast]: preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)
+PARSE mfeat-zernike step 6 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 6 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 7 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 7 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 8 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 8 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 9 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 9 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 10 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 10 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 11 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 11 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 14 [full_ast]: line 22: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 14 [full_ast]: preprocessing fit at line 22 precedes split at line 25 (vocabulary-only)
+PARSE mfeat-zernike step 17 [full_ast]: line 16: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 17 [full_ast]: preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)
+PARSE mfeat-zernike step 18 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 18 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE mfeat-zernike step 19 [full_ast]: line 15: LabelEncoder is vocabulary-only, not a leakage source
+PARSE mfeat-zernike step 19 [full_ast]: preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)
+PARSE letter step 0 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 0 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 2 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 2 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 3 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 3 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 4 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 4 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 5 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 5 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 7 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 7 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 11 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 11 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 16 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 16 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 17 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 17 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE letter step 19 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE letter step 19 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE amazon-commerce-reviews step 0 [full_ast]: leaking preprocessing fit at line 15 precedes split at line 19
+PARSE amazon-commerce-reviews step 1 [full_ast]: leaking preprocessing fit at line 15 precedes split at line 19
+PARSE amazon-commerce-reviews step 4 [full_ast]: leaking preprocessing fit at line 15 precedes split at line 19
+PARSE amazon-commerce-reviews step 10 [full_ast]: leaking preprocessing fit at line 15 precedes split at line 19
+PARSE Satellite step 0 [full_ast]: line 13: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 0 [full_ast]: preprocessing fit at line 13 precedes split at line 19 (vocabulary-only)
+PARSE Satellite step 1 [full_ast]: line 13: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 1 [full_ast]: preprocessing fit at line 13 precedes split at line 19 (vocabulary-only)
+PARSE Satellite step 2 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 2 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 4 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 4 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 5 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 5 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 6 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 6 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 7 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 7 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 8 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 8 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 9 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 9 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 10 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 10 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE Satellite step 11 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 11 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 12 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 12 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE Satellite step 13 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 13 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE Satellite step 15 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 15 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE Satellite step 17 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 17 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+PARSE Satellite step 18 [full_ast]: line 12: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 18 [full_ast]: preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)
+PARSE Satellite step 19 [full_ast]: line 11: LabelEncoder is vocabulary-only, not a leakage source
+PARSE Satellite step 19 [full_ast]: preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)
+INJECT F1: CP-3R keeps F1 natural-only; no synthetic F1 added
+BASELINE-FAIL F2 Satellite:9: timeout after 180s
+BASELINE-FAIL F2 mfeat-fourier:6: timeout after 180s
+BASELINE-FAIL F2 letter:11: timeout after 180s
+REEXEC-FAIL F2 pendigits:13: exit 1
+BASELINE-FAIL F2 mfeat-zernike:14: timeout after 180s
+BASELINE-FAIL F2 mfeat-fourier:17: timeout after 180s
+REEXEC-FAIL F2 pendigits:10: exit 1
+BASELINE-FAIL F3 letter:5: timeout after 180s
+BASELINE-FAIL F3 mfeat-zernike:18: timeout after 180s
+BASELINE-FAIL F3 amazon-commerce-reviews:1: timeout after 180s
+BASELINE-FAIL F3 mfeat-fourier:2: timeout after 180s
+BASELINE-FAIL F3 letter:16: timeout after 180s
+CRASH F3 pendigits:19: injected_score 0.2684 < 30% of baseline 0.9941 (threshold 0.2982) (baseline=0.9941, injected=0.2684)
+BASELINE-FAIL F3 mfeat-zernike:19: timeout after 180s
+BASELINE-FAIL F3 amazon-commerce-reviews:4: timeout after 180s
+CRASH F3 letter:0: injected_score 0.0117 < MIN_VIABLE_SCORE 0.1 (baseline=0.9662, injected=0.0117)
+BASELINE-FAIL F3 mfeat-zernike:11: timeout after 180s
+CRASH F3 amazon-commerce-reviews:10: injected_score 0.1253 < 30% of baseline 0.6581 (threshold 0.1974) (baseline=0.6581, injected=0.1253)
+BASELINE-FAIL F3 mfeat-fourier:4: timeout after 180s

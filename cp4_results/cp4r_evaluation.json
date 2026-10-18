@@ -1,0 +1,2068 @@
+{
+  "corpus": {
+    "n_steps": 208,
+    "n_datasets": 16,
+    "F1": 64,
+    "F2": 40,
+    "F3": 40,
+    "any_fault": 121,
+    "clean": 87
+  },
+  "D1": {
+    "target": "F1",
+    "detector": "rule_f1",
+    "tier": "gate",
+    "aggregate": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auroc": 1.0,
+      "avg_precision": 1.0,
+      "confusion_matrix": [
+        [
+          144,
+          0
+        ],
+        [
+          0,
+          64
+        ]
+      ]
+    },
+    "per_fold": [
+      {
+        "dataset": "Satellite",
+        "n_test": 17,
+        "n_pos": 8,
+        "n_neg": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "tn": 9
+      },
+      {
+        "dataset": "amazon-commerce-reviews",
+        "n_test": 4,
+        "n_pos": 1,
+        "n_neg": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3
+      },
+      {
+        "dataset": "christine",
+        "n_test": 12,
+        "n_pos": 2,
+        "n_neg": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 10
+      },
+      {
+        "dataset": "credit-approval",
+        "n_test": 13,
+        "n_pos": 4,
+        "n_neg": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 9
+      },
+      {
+        "dataset": "credit-g",
+        "n_test": 17,
+        "n_pos": 6,
+        "n_neg": 11,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "tn": 11
+      },
+      {
+        "dataset": "diabetes",
+        "n_test": 15,
+        "n_pos": 5,
+        "n_neg": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "tn": 10
+      },
+      {
+        "dataset": "jasmine",
+        "n_test": 13,
+        "n_pos": 7,
+        "n_neg": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0,
+        "tn": 6
+      },
+      {
+        "dataset": "kr-vs-kp",
+        "n_test": 19,
+        "n_pos": 5,
+        "n_neg": 14,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "tn": 14
+      },
+      {
+        "dataset": "letter",
+        "n_test": 10,
+        "n_pos": 1,
+        "n_neg": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 9
+      },
+      {
+        "dataset": "mfeat-factors",
+        "n_test": 10,
+        "n_pos": 3,
+        "n_neg": 7,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 7
+      },
+      {
+        "dataset": "mfeat-fourier",
+        "n_test": 14,
+        "n_pos": 4,
+        "n_neg": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 10
+      },
+      {
+        "dataset": "mfeat-morphological",
+        "n_test": 8,
+        "n_pos": 0,
+        "n_neg": 8,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auroc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "mfeat-zernike",
+        "n_test": 14,
+        "n_pos": 2,
+        "n_neg": 12,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "pendigits",
+        "n_test": 14,
+        "n_pos": 3,
+        "n_neg": 11,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 11
+      },
+      {
+        "dataset": "tic-tac-toe",
+        "n_test": 16,
+        "n_pos": 10,
+        "n_neg": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "tn": 6
+      },
+      {
+        "dataset": "vehicle",
+        "n_test": 12,
+        "n_pos": 3,
+        "n_neg": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 9
+      }
+    ]
+  },
+  "D1_tautology_disclosure": {
+    "status": "acknowledged",
+    "explanation": "D1 uses hash_seen_before to detect F1/RCP. This feature is the definition of F1: a step is labeled F1 iff its canonical hash was seen in an earlier step. D1's perfect P/R/F1 is therefore by construction.",
+    "paper_framing": "Report D1 as a definitional Tier 1 rule, with CP-3R construct analysis as independent evidence for RCP wastefulness.",
+    "independent_evidence": {
+      "source": "CP-3R construct analysis",
+      "file": "analysis/rcp_construct_analysis.csv",
+      "summary_file": "analysis/rcp_construct_summary.json",
+      "construct_summary": {
+        "n_rcp_steps_analyzed": 46,
+        "n_rcp_steps_with_donor": 46,
+        "n_rcp_total": 64,
+        "mean_abs_delta": 0.04033963569820349,
+        "median_abs_delta": 0.0026000000000000467,
+        "std_delta": 0.15972233741352648,
+        "pct_within_001": 41.30434782608695,
+        "pct_within_005": 69.56521739130434,
+        "pct_improved": 41.30434782608695,
+        "pct_matched": 41.30434782608695,
+        "pct_degraded": 17.391304347826086
+      }
+    }
+  },
+  "D2_gate": {
+    "target": "F2",
+    "detector": "gate_f2",
+    "tier": "gate",
+    "aggregate": {
+      "precision": 0.6897,
+      "recall": 1.0,
+      "f1": 0.8163,
+      "auroc": 0.9464,
+      "avg_precision": 0.6897,
+      "confusion_matrix": [
+        [
+          150,
+          18
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    "per_fold": [
+      {
+        "dataset": "Satellite",
+        "n_test": 17,
+        "n_pos": 1,
+        "n_neg": 16,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.3333,
+        "auroc": 0.875,
+        "tp": 1,
+        "fp": 4,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "amazon-commerce-reviews",
+        "n_test": 4,
+        "n_pos": 4,
+        "n_neg": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": null,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      {
+        "dataset": "christine",
+        "n_test": 12,
+        "n_pos": 2,
+        "n_neg": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 10
+      },
+      {
+        "dataset": "credit-approval",
+        "n_test": 13,
+        "n_pos": 3,
+        "n_neg": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 10
+      },
+      {
+        "dataset": "credit-g",
+        "n_test": 17,
+        "n_pos": 2,
+        "n_neg": 15,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "auroc": 0.9,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "diabetes",
+        "n_test": 15,
+        "n_pos": 2,
+        "n_neg": 13,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "jasmine",
+        "n_test": 13,
+        "n_pos": 2,
+        "n_neg": 11,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 11
+      },
+      {
+        "dataset": "kr-vs-kp",
+        "n_test": 19,
+        "n_pos": 3,
+        "n_neg": 16,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "auroc": 0.9062,
+        "tp": 3,
+        "fp": 3,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "letter",
+        "n_test": 10,
+        "n_pos": 1,
+        "n_neg": 9,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "auroc": 0.9444,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "mfeat-factors",
+        "n_test": 10,
+        "n_pos": 2,
+        "n_neg": 8,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "auroc": 0.8125,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0,
+        "tn": 5
+      },
+      {
+        "dataset": "mfeat-fourier",
+        "n_test": 14,
+        "n_pos": 10,
+        "n_neg": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4
+      },
+      {
+        "dataset": "mfeat-morphological",
+        "n_test": 8,
+        "n_pos": 2,
+        "n_neg": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 6
+      },
+      {
+        "dataset": "mfeat-zernike",
+        "n_test": 14,
+        "n_pos": 1,
+        "n_neg": 13,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "pendigits",
+        "n_test": 14,
+        "n_pos": 0,
+        "n_neg": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auroc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 14
+      },
+      {
+        "dataset": "tic-tac-toe",
+        "n_test": 16,
+        "n_pos": 2,
+        "n_neg": 14,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "auroc": 0.9643,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "vehicle",
+        "n_test": 12,
+        "n_pos": 3,
+        "n_neg": 9,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "auroc": 0.8333,
+        "tp": 3,
+        "fp": 3,
+        "fn": 0,
+        "tn": 6
+      }
+    ]
+  },
+  "D2_monitor": {
+    "target": "F2",
+    "detector": "monitor_f2",
+    "tier": "all",
+    "aggregate": {
+      "precision": 0.6349,
+      "recall": 1.0,
+      "f1": 0.7767,
+      "auroc": 0.9345,
+      "avg_precision": 0.6452,
+      "confusion_matrix": [
+        [
+          145,
+          23
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    "per_fold": [
+      {
+        "dataset": "Satellite",
+        "n_test": 17,
+        "n_pos": 1,
+        "n_neg": 16,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.3333,
+        "auroc": 0.875,
+        "tp": 1,
+        "fp": 4,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "amazon-commerce-reviews",
+        "n_test": 4,
+        "n_pos": 4,
+        "n_neg": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": null,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      {
+        "dataset": "christine",
+        "n_test": 12,
+        "n_pos": 2,
+        "n_neg": 10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 10
+      },
+      {
+        "dataset": "credit-approval",
+        "n_test": 13,
+        "n_pos": 3,
+        "n_neg": 10,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75,
+        "auroc": 0.9,
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "credit-g",
+        "n_test": 17,
+        "n_pos": 2,
+        "n_neg": 15,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "auroc": 0.9,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "diabetes",
+        "n_test": 15,
+        "n_pos": 2,
+        "n_neg": 13,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "jasmine",
+        "n_test": 13,
+        "n_pos": 2,
+        "n_neg": 11,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "auroc": 0.9545,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 10
+      },
+      {
+        "dataset": "kr-vs-kp",
+        "n_test": 19,
+        "n_pos": 3,
+        "n_neg": 16,
+        "precision": 0.4286,
+        "recall": 1.0,
+        "f1": 0.6,
+        "auroc": 0.875,
+        "tp": 3,
+        "fp": 4,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "letter",
+        "n_test": 10,
+        "n_pos": 1,
+        "n_neg": 9,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "auroc": 0.9444,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "mfeat-factors",
+        "n_test": 10,
+        "n_pos": 2,
+        "n_neg": 8,
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714,
+        "auroc": 0.8125,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0,
+        "tn": 5
+      },
+      {
+        "dataset": "mfeat-fourier",
+        "n_test": 14,
+        "n_pos": 10,
+        "n_neg": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4
+      },
+      {
+        "dataset": "mfeat-morphological",
+        "n_test": 8,
+        "n_pos": 2,
+        "n_neg": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 6
+      },
+      {
+        "dataset": "mfeat-zernike",
+        "n_test": 14,
+        "n_pos": 1,
+        "n_neg": 13,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "pendigits",
+        "n_test": 14,
+        "n_pos": 0,
+        "n_neg": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auroc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 14
+      },
+      {
+        "dataset": "tic-tac-toe",
+        "n_test": 16,
+        "n_pos": 2,
+        "n_neg": 14,
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "auroc": 0.9643,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "vehicle",
+        "n_test": 12,
+        "n_pos": 3,
+        "n_neg": 9,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "auroc": 0.8333,
+        "tp": 3,
+        "fp": 3,
+        "fn": 0,
+        "tn": 6
+      }
+    ]
+  },
+  "F2_effect_sizes": {
+    "negligible": {
+      "count": 21,
+      "n_reexec": 15,
+      "n_proxy": 6,
+      "datasets": [
+        "amazon-commerce-reviews",
+        "credit-approval",
+        "jasmine",
+        "kr-vs-kp",
+        "letter",
+        "mfeat-factors",
+        "mfeat-fourier",
+        "mfeat-morphological",
+        "mfeat-zernike",
+        "tic-tac-toe"
+      ]
+    },
+    "small": {
+      "count": 7,
+      "n_reexec": 2,
+      "n_proxy": 5,
+      "datasets": [
+        "amazon-commerce-reviews",
+        "mfeat-fourier",
+        "vehicle"
+      ]
+    },
+    "medium": {
+      "count": 5,
+      "n_reexec": 5,
+      "n_proxy": 0,
+      "datasets": [
+        "credit-g",
+        "diabetes",
+        "vehicle"
+      ]
+    },
+    "large": {
+      "count": 7,
+      "n_reexec": 3,
+      "n_proxy": 4,
+      "datasets": [
+        "Satellite",
+        "amazon-commerce-reviews",
+        "christine",
+        "mfeat-fourier"
+      ]
+    },
+    "undetectable_region": {
+      "description": "F2 leakage with observed effect < 0.01 is a negligible-effect region; statistical score-inflation detection is unreliable there.",
+      "threshold": 0.01
+    }
+  },
+  "D3_gate": {
+    "target": "F3",
+    "detector": "learned",
+    "tier": "gate",
+    "aggregate": {
+      "precision": 0.5082,
+      "recall": 0.775,
+      "f1": 0.6139,
+      "auroc": 0.8351,
+      "avg_precision": 0.4662,
+      "confusion_matrix": [
+        [
+          138,
+          30
+        ],
+        [
+          9,
+          31
+        ]
+      ]
+    },
+    "per_fold": [
+      {
+        "dataset": "Satellite",
+        "n_test": 17,
+        "n_pos": 4,
+        "n_neg": 13,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "amazon-commerce-reviews",
+        "n_test": 4,
+        "n_pos": 1,
+        "n_neg": 3,
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "auroc": 0.5,
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "tn": 1
+      },
+      {
+        "dataset": "christine",
+        "n_test": 12,
+        "n_pos": 3,
+        "n_neg": 9,
+        "precision": 0.4,
+        "recall": 0.6667,
+        "f1": 0.5,
+        "auroc": 0.7037,
+        "tp": 2,
+        "fp": 3,
+        "fn": 1,
+        "tn": 6
+      },
+      {
+        "dataset": "credit-approval",
+        "n_test": 13,
+        "n_pos": 3,
+        "n_neg": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auroc": 0.6333,
+        "tp": 0,
+        "fp": 3,
+        "fn": 3,
+        "tn": 7
+      },
+      {
+        "dataset": "credit-g",
+        "n_test": 17,
+        "n_pos": 3,
+        "n_neg": 14,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 14
+      },
+      {
+        "dataset": "diabetes",
+        "n_test": 15,
+        "n_pos": 3,
+        "n_neg": 12,
+        "precision": 0.4286,
+        "recall": 1.0,
+        "f1": 0.6,
+        "auroc": 0.75,
+        "tp": 3,
+        "fp": 4,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "jasmine",
+        "n_test": 13,
+        "n_pos": 3,
+        "n_neg": 10,
+        "precision": 0.6667,
+        "recall": 0.6667,
+        "f1": 0.6667,
+        "auroc": 0.8667,
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "tn": 9
+      },
+      {
+        "dataset": "kr-vs-kp",
+        "n_test": 19,
+        "n_pos": 3,
+        "n_neg": 16,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "auroc": 0.9583,
+        "tp": 3,
+        "fp": 3,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "letter",
+        "n_test": 10,
+        "n_pos": 1,
+        "n_neg": 9,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "auroc": 0.8889,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "mfeat-factors",
+        "n_test": 10,
+        "n_pos": 3,
+        "n_neg": 7,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "auroc": 0.8571,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "tn": 6
+      },
+      {
+        "dataset": "mfeat-fourier",
+        "n_test": 14,
+        "n_pos": 1,
+        "n_neg": 13,
+        "precision": 0.1667,
+        "recall": 1.0,
+        "f1": 0.2857,
+        "auroc": 0.7692,
+        "tp": 1,
+        "fp": 5,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "mfeat-morphological",
+        "n_test": 8,
+        "n_pos": 3,
+        "n_neg": 5,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "auroc": 0.8667,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "tn": 4
+      },
+      {
+        "dataset": "mfeat-zernike",
+        "n_test": 14,
+        "n_pos": 0,
+        "n_neg": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auroc": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 14
+      },
+      {
+        "dataset": "pendigits",
+        "n_test": 14,
+        "n_pos": 3,
+        "n_neg": 11,
+        "precision": 0.1667,
+        "recall": 0.3333,
+        "f1": 0.2222,
+        "auroc": 0.3333,
+        "tp": 1,
+        "fp": 5,
+        "fn": 2,
+        "tn": 6
+      },
+      {
+        "dataset": "tic-tac-toe",
+        "n_test": 16,
+        "n_pos": 3,
+        "n_neg": 13,
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1": 0.5,
+        "auroc": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "tn": 13
+      },
+      {
+        "dataset": "vehicle",
+        "n_test": 12,
+        "n_pos": 3,
+        "n_neg": 9,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "auroc": 0.9444,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "tn": 8
+      }
+    ],
+    "per_strategy_recall": {
+      "clamp_depth": {
+        "tp": 10,
+        "fn": 2,
+        "support": 12,
+        "recall": 0.8333
+      },
+      "clamp_n_est": {
+        "tp": 8,
+        "fn": 4,
+        "support": 12,
+        "recall": 0.6667
+      },
+      "clamp_lr": {
+        "tp": 12,
+        "fn": 3,
+        "support": 15,
+        "recall": 0.8
+      },
+      "clamp_iter": {
+        "tp": 1,
+        "fn": 0,
+        "support": 1,
+        "recall": 1.0
+      }
+    }
+  },
+  "D3_monitor": {
+    "target": "F3",
+    "detector": "learned",
+    "tier": "all",
+    "aggregate": {
+      "precision": 0.5455,
+      "recall": 0.6,
+      "f1": 0.5714,
+      "auroc": 0.858,
+      "avg_precision": 0.6455,
+      "confusion_matrix": [
+        [
+          148,
+          20
+        ],
+        [
+          16,
+          24
+        ]
+      ]
+    },
+    "per_fold": [
+      {
+        "dataset": "Satellite",
+        "n_test": 17,
+        "n_pos": 4,
+        "n_neg": 13,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 1,
+        "tn": 13
+      },
+      {
+        "dataset": "amazon-commerce-reviews",
+        "n_test": 4,
+        "n_pos": 1,
+        "n_neg": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3
+      },
+      {
+        "dataset": "christine",
+        "n_test": 12,
+        "n_pos": 3,
+        "n_neg": 9,
+        "precision": 0.4,
+        "recall": 0.6667,
+        "f1": 0.5,
+        "auroc": 0.8889,
+        "tp": 2,
+        "fp": 3,
+        "fn": 1,
+        "tn": 6
+      },
+      {
+        "dataset": "credit-approval",
+        "n_test": 13,
+        "n_pos": 3,
+        "n_neg": 10,
+        "precision": 0.6667,
+        "recall": 0.6667,
+        "f1": 0.6667,
+        "auroc": 0.8,
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "tn": 9
+      },
+      {
+        "dataset": "credit-g",
+        "n_test": 17,
+        "n_pos": 3,
+        "n_neg": 14,
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1": 0.5,
+        "auroc": 0.5238,
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "tn": 14
+      },
+      {
+        "dataset": "diabetes",
+        "n_test": 15,
+        "n_pos": 3,
+        "n_neg": 12,
+        "precision": 0.5,
+        "recall": 0.3333,
+        "f1": 0.4,
+        "auroc": 0.75,
+        "tp": 1,
+        "fp": 1,
+        "fn": 2,
+        "tn": 11
+      },
+      {
+        "dataset": "jasmine",
+        "n_test": 13,
+        "n_pos": 3,
+        "n_neg": 10,
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "tn": 10
+      },
+      {
+        "dataset": "kr-vs-kp",
+        "n_test": 19,
+        "n_pos": 3,
+        "n_neg": 16,
+        "precision": 0.4,
+        "recall": 0.6667,
+        "f1": 0.5,
+        "auroc": 0.8542,
+        "tp": 2,
+        "fp": 3,
+        "fn": 1,
+        "tn": 13
+      },
+      {
+        "dataset": "letter",
+        "n_test": 10,
+        "n_pos": 1,
+        "n_neg": 9,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auroc": 0.7778,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "tn": 8
+      },
+      {
+        "dataset": "mfeat-factors",
+        "n_test": 10,
+        "n_pos": 3,
+        "n_neg": 7,
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "auroc": 0.9524,
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "tn": 7
+      },
+      {
+        "dataset": "mfeat-fourier",
+        "n_test": 14,
+        "n_pos": 1,
+        "n_neg": 13,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auroc": 0.4615,
+        "tp": 0,
+        "fp": 4,
+        "fn": 1,
+        "tn": 9
+      },
+      {
+        "dataset": "mfeat-morphological",
+        "n_test": 8,
+        "n_pos": 3,
+        "n_neg": 5,
+        "precision": 0.3333,
+        "recall": 0.3333,
+        "f1": 0.3333,
+        "auroc": 0.6667,
+        "tp": 1,
+        "fp": 2,
+        "fn": 2,
+        "tn": 3
+      },
+      {
+        "dataset": "mfeat-zernike",
+        "n_test": 14,
+        "n_pos": 0,
+        "n_neg": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auroc": null,
+        "tp": 0,
+        "fp": 4,
+        "fn": 0,
+        "tn": 10
+      },
+      {
+        "dataset": "pendigits",
+        "n_test": 14,
+        "n_pos": 3,
+        "n_neg": 11,
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1": 0.5,
+        "auroc": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "tn": 11
+      },
+      {
+        "dataset": "tic-tac-toe",
+        "n_test": 16,
+        "n_pos": 3,
+        "n_neg": 13,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 13
+      },
+      {
+        "dataset": "vehicle",
+        "n_test": 12,
+        "n_pos": 3,
+        "n_neg": 9,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "auroc": 0.963,
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "tn": 8
+      }
+    ],
+    "per_strategy_recall": {
+      "clamp_depth": {
+        "tp": 4,
+        "fn": 8,
+        "support": 12,
+        "recall": 0.3333
+      },
+      "clamp_n_est": {
+        "tp": 9,
+        "fn": 3,
+        "support": 12,
+        "recall": 0.75
+      },
+      "clamp_lr": {
+        "tp": 11,
+        "fn": 4,
+        "support": 15,
+        "recall": 0.7333
+      },
+      "clamp_iter": {
+        "tp": 0,
+        "fn": 1,
+        "support": 1,
+        "recall": 0.0
+      }
+    }
+  },
+  "D_any_gate": {
+    "target": "any_fault",
+    "detector": "learned",
+    "tier": "gate",
+    "aggregate": {
+      "precision": 0.9386,
+      "recall": 0.8843,
+      "f1": 0.9106,
+      "auroc": 0.9758,
+      "avg_precision": 0.985,
+      "confusion_matrix": [
+        [
+          80,
+          7
+        ],
+        [
+          14,
+          107
+        ]
+      ]
+    },
+    "per_fold": [
+      {
+        "dataset": "Satellite",
+        "n_test": 17,
+        "n_pos": 12,
+        "n_neg": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 12,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      },
+      {
+        "dataset": "amazon-commerce-reviews",
+        "n_test": 4,
+        "n_pos": 4,
+        "n_neg": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": null,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      {
+        "dataset": "christine",
+        "n_test": 12,
+        "n_pos": 6,
+        "n_neg": 6,
+        "precision": 0.8,
+        "recall": 0.6667,
+        "f1": 0.7273,
+        "auroc": 0.8889,
+        "tp": 4,
+        "fp": 1,
+        "fn": 2,
+        "tn": 5
+      },
+      {
+        "dataset": "credit-approval",
+        "n_test": 13,
+        "n_pos": 10,
+        "n_neg": 3,
+        "precision": 1.0,
+        "recall": 0.7,
+        "f1": 0.8235,
+        "auroc": 0.9333,
+        "tp": 7,
+        "fp": 0,
+        "fn": 3,
+        "tn": 3
+      },
+      {
+        "dataset": "credit-g",
+        "n_test": 17,
+        "n_pos": 9,
+        "n_neg": 8,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "diabetes",
+        "n_test": 15,
+        "n_pos": 9,
+        "n_neg": 6,
+        "precision": 0.875,
+        "recall": 0.7778,
+        "f1": 0.8235,
+        "auroc": 0.9074,
+        "tp": 7,
+        "fp": 1,
+        "fn": 2,
+        "tn": 5
+      },
+      {
+        "dataset": "jasmine",
+        "n_test": 13,
+        "n_pos": 9,
+        "n_neg": 4,
+        "precision": 1.0,
+        "recall": 0.7778,
+        "f1": 0.875,
+        "auroc": 0.9444,
+        "tp": 7,
+        "fp": 0,
+        "fn": 2,
+        "tn": 4
+      },
+      {
+        "dataset": "kr-vs-kp",
+        "n_test": 19,
+        "n_pos": 10,
+        "n_neg": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "tn": 9
+      },
+      {
+        "dataset": "letter",
+        "n_test": 10,
+        "n_pos": 3,
+        "n_neg": 7,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 7
+      },
+      {
+        "dataset": "mfeat-factors",
+        "n_test": 10,
+        "n_pos": 7,
+        "n_neg": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3
+      },
+      {
+        "dataset": "mfeat-fourier",
+        "n_test": 14,
+        "n_pos": 12,
+        "n_neg": 2,
+        "precision": 0.9231,
+        "recall": 1.0,
+        "f1": 0.96,
+        "auroc": 1.0,
+        "tp": 12,
+        "fp": 1,
+        "fn": 0,
+        "tn": 1
+      },
+      {
+        "dataset": "mfeat-morphological",
+        "n_test": 8,
+        "n_pos": 5,
+        "n_neg": 3,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714,
+        "auroc": 0.8667,
+        "tp": 2,
+        "fp": 0,
+        "fn": 3,
+        "tn": 3
+      },
+      {
+        "dataset": "mfeat-zernike",
+        "n_test": 14,
+        "n_pos": 2,
+        "n_neg": 12,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "pendigits",
+        "n_test": 14,
+        "n_pos": 5,
+        "n_neg": 9,
+        "precision": 0.4286,
+        "recall": 0.6,
+        "f1": 0.5,
+        "auroc": 0.7111,
+        "tp": 3,
+        "fp": 4,
+        "fn": 2,
+        "tn": 5
+      },
+      {
+        "dataset": "tic-tac-toe",
+        "n_test": 16,
+        "n_pos": 11,
+        "n_neg": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      },
+      {
+        "dataset": "vehicle",
+        "n_test": 12,
+        "n_pos": 7,
+        "n_neg": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      }
+    ]
+  },
+  "D_any_monitor": {
+    "target": "any_fault",
+    "detector": "learned",
+    "tier": "all",
+    "aggregate": {
+      "precision": 0.9744,
+      "recall": 0.9421,
+      "f1": 0.958,
+      "auroc": 0.9878,
+      "avg_precision": 0.9925,
+      "confusion_matrix": [
+        [
+          84,
+          3
+        ],
+        [
+          7,
+          114
+        ]
+      ]
+    },
+    "per_fold": [
+      {
+        "dataset": "Satellite",
+        "n_test": 17,
+        "n_pos": 12,
+        "n_neg": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 12,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      },
+      {
+        "dataset": "amazon-commerce-reviews",
+        "n_test": 4,
+        "n_pos": 4,
+        "n_neg": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": null,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 0
+      },
+      {
+        "dataset": "christine",
+        "n_test": 12,
+        "n_pos": 6,
+        "n_neg": 6,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0,
+        "tn": 6
+      },
+      {
+        "dataset": "credit-approval",
+        "n_test": 13,
+        "n_pos": 10,
+        "n_neg": 3,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9474,
+        "auroc": 1.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 1,
+        "tn": 3
+      },
+      {
+        "dataset": "credit-g",
+        "n_test": 17,
+        "n_pos": 9,
+        "n_neg": 8,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "tn": 8
+      },
+      {
+        "dataset": "diabetes",
+        "n_test": 15,
+        "n_pos": 9,
+        "n_neg": 6,
+        "precision": 0.875,
+        "recall": 0.7778,
+        "f1": 0.8235,
+        "auroc": 0.8889,
+        "tp": 7,
+        "fp": 1,
+        "fn": 2,
+        "tn": 5
+      },
+      {
+        "dataset": "jasmine",
+        "n_test": 13,
+        "n_pos": 9,
+        "n_neg": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "tn": 4
+      },
+      {
+        "dataset": "kr-vs-kp",
+        "n_test": 19,
+        "n_pos": 10,
+        "n_neg": 9,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "tn": 9
+      },
+      {
+        "dataset": "letter",
+        "n_test": 10,
+        "n_pos": 3,
+        "n_neg": 7,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "tn": 7
+      },
+      {
+        "dataset": "mfeat-factors",
+        "n_test": 10,
+        "n_pos": 7,
+        "n_neg": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0,
+        "tn": 3
+      },
+      {
+        "dataset": "mfeat-fourier",
+        "n_test": 14,
+        "n_pos": 12,
+        "n_neg": 2,
+        "precision": 0.9167,
+        "recall": 0.9167,
+        "f1": 0.9167,
+        "auroc": 0.9583,
+        "tp": 11,
+        "fp": 1,
+        "fn": 1,
+        "tn": 1
+      },
+      {
+        "dataset": "mfeat-morphological",
+        "n_test": 8,
+        "n_pos": 5,
+        "n_neg": 3,
+        "precision": 0.75,
+        "recall": 0.6,
+        "f1": 0.6667,
+        "auroc": 0.7333,
+        "tp": 3,
+        "fp": 1,
+        "fn": 2,
+        "tn": 2
+      },
+      {
+        "dataset": "mfeat-zernike",
+        "n_test": 14,
+        "n_pos": 2,
+        "n_neg": 12,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 12
+      },
+      {
+        "dataset": "pendigits",
+        "n_test": 14,
+        "n_pos": 5,
+        "n_neg": 9,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "auroc": 0.8667,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1,
+        "tn": 9
+      },
+      {
+        "dataset": "tic-tac-toe",
+        "n_test": 16,
+        "n_pos": 11,
+        "n_neg": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      },
+      {
+        "dataset": "vehicle",
+        "n_test": 12,
+        "n_pos": 7,
+        "n_neg": 5,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "tp": 7,
+        "fp": 0,
+        "fn": 0,
+        "tn": 5
+      }
+    ]
+  },
+  "baseline_score_threshold": {
+    "0.5": {
+      "precision": 0.8,
+      "recall": 0.0661,
+      "f1": 0.1221,
+      "n_flagged": 10
+    },
+    "0.55": {
+      "precision": 0.8,
+      "recall": 0.0661,
+      "f1": 0.1221,
+      "n_flagged": 10
+    },
+    "0.6": {
+      "precision": 0.8,
+      "recall": 0.0661,
+      "f1": 0.1221,
+      "n_flagged": 10
+    },
+    "0.65": {
+      "precision": 0.8,
+      "recall": 0.0661,
+      "f1": 0.1221,
+      "n_flagged": 10
+    },
+    "0.7": {
+      "precision": 0.7727,
+      "recall": 0.1405,
+      "f1": 0.2378,
+      "n_flagged": 22
+    },
+    "0.75": {
+      "precision": 0.6842,
+      "recall": 0.3223,
+      "f1": 0.4382,
+      "n_flagged": 57
+    },
+    "0.8": {
+      "precision": 0.5361,
+      "recall": 0.4298,
+      "f1": 0.4771,
+      "n_flagged": 97
+    }
+  },
+  "baseline_random": {
+    "F1": {
+      "n_positive": 64,
+      "n_total": 208,
+      "fault_rate": 0.3077,
+      "expected_precision": 0.3077,
+      "expected_recall": 0.3077,
+      "expected_f1": 0.3077
+    },
+    "F2": {
+      "n_positive": 40,
+      "n_total": 208,
+      "fault_rate": 0.1923,
+      "expected_precision": 0.1923,
+      "expected_recall": 0.1923,
+      "expected_f1": 0.1923
+    },
+    "F3": {
+      "n_positive": 40,
+      "n_total": 208,
+      "fault_rate": 0.1923,
+      "expected_precision": 0.1923,
+      "expected_recall": 0.1923,
+      "expected_f1": 0.1923
+    },
+    "any_fault": {
+      "n_positive": 121,
+      "n_total": 208,
+      "fault_rate": 0.5817,
+      "expected_precision": 0.5817,
+      "expected_recall": 0.5817,
+      "expected_f1": 0.5817
+    }
+  },
+  "baseline_oracle": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "source": "cp3r_summary.json",
+    "cost_savings_pct": null
+  },
+  "baseline_ungated": {
+    "precision": null,
+    "recall": 0.0,
+    "f1": 0.0,
+    "cost_savings_pct": 0.0,
+    "description": "No detector; all steps accepted."
+  },
+  "feature_importance": {
+    "D3_gate": {
+      "target": "F3",
+      "tier": "gate",
+      "importances": {
+        "n_hyperparams": 369,
+        "n_preprocessing_steps": 141,
+        "preprocessing_before_split": 72,
+        "leaky_before_split": 72,
+        "hash_seen_before": 64,
+        "hash_first_seen_at": 43,
+        "parse_quality_full_ast": 0
+      }
+    },
+    "D3_monitor": {
+      "target": "F3",
+      "tier": "all",
+      "importances": {
+        "validation_score": 156,
+        "wall_clock_sec": 141,
+        "score_rank_pct": 135,
+        "score_delta_from_prev": 132,
+        "wall_clock_rank_pct": 124,
+        "within_run_z": 89,
+        "n_hyperparams": 79,
+        "score_rank_in_run": 76,
+        "leaky_before_split": 44,
+        "steps_since_improvement": 42,
+        "n_preprocessing_steps": 30,
+        "preprocessing_before_split": 27,
+        "hash_first_seen_at": 25,
+        "hash_seen_before": 11,
+        "is_best_so_far": 1,
+        "parse_quality_full_ast": 0
+      }
+    },
+    "D_any_gate": {
+      "target": "any_fault",
+      "tier": "gate",
+      "importances": {
+        "n_hyperparams": 429,
+        "n_preprocessing_steps": 151,
+        "preprocessing_before_split": 89,
+        "hash_seen_before": 65,
+        "leaky_before_split": 62,
+        "hash_first_seen_at": 2,
+        "parse_quality_full_ast": 0,
+        "d1_prediction": 0,
+        "d2_gate_prediction": 0
+      }
+    },
+    "D_any_monitor": {
+      "target": "any_fault",
+      "tier": "all",
+      "importances": {
+        "wall_clock_sec": 160,
+        "score_rank_pct": 134,
+        "wall_clock_rank_pct": 109,
+        "n_hyperparams": 103,
+        "hash_seen_before": 98,
+        "leaky_before_split": 90,
+        "preprocessing_before_split": 73,
+        "score_rank_in_run": 71,
+        "validation_score": 62,
+        "score_delta_from_prev": 55,
+        "within_run_z": 55,
+        "n_preprocessing_steps": 22,
+        "steps_since_improvement": 22,
+        "d2_monitor_prediction": 19,
+        "hash_first_seen_at": 16,
+        "is_best_so_far": 1,
+        "parse_quality_full_ast": 0,
+        "d1_prediction": 0,
+        "d2_gate_prediction": 0
+      }
+    }
+  },
+  "savings_analysis": {
+    "tier1_gate": {
+      "description": "Correctly flagged pre-execution trials; genuine skip savings.",
+      "true_positives": 107,
+      "false_positives": 7,
+      "wall_clock_saved_sec": 9325.03,
+      "wall_clock_wasted_sec": 756.15,
+      "savings_pct": 52.99
+    },
+    "tier2_monitor_additional": {
+      "description": "Additional faulty trials caught post-execution; no direct skip savings.",
+      "additional_true_positives": 8,
+      "wall_clock_of_flagged_sec": 390.84
+    },
+    "combined_detection": {
+      "total_true_positives": 115,
+      "total_faulty": 121,
+      "combined_recall": 0.9504,
+      "tier1_genuine_savings_pct": 52.99,
+      "oracle_ceiling_pct": 55.69
+    },
+    "total_wall_clock_sec": 17598.74
+  }
+}

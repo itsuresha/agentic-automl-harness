@@ -1,0 +1,98 @@
+{
+  "corpus": {
+    "datasets": 16,
+    "total_steps": 320,
+    "non_buggy_steps": 208,
+    "buggy_steps": 112
+  },
+  "feature_extraction": {
+    "canonical_hash_version": "v2",
+    "parsed_full_ast": 204,
+    "parsed_partial_ast": 4,
+    "parsed_regex_fallback": 0,
+    "unparseable": 0,
+    "parse_success_rate": 1.0
+  },
+  "natural_faults": {
+    "F1": {
+      "count": 64,
+      "rate": 0.3077
+    },
+    "F2": {
+      "count": 15,
+      "rate": 0.0721
+    },
+    "F3": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "any": {
+      "count": 75,
+      "rate": 0.3606
+    }
+  },
+  "synthetic_injections": {
+    "F1": {
+      "attempted": 0,
+      "succeeded": 0,
+      "cp3r_policy": "natural_only"
+    },
+    "F2": {
+      "attempted": 32,
+      "succeeded": 25,
+      "crashed": 0,
+      "mean_score_delta": 0.022592000000000004
+    },
+    "F3": {
+      "attempted": 49,
+      "succeeded": 40,
+      "crashed": 3,
+      "mean_score_delta": -0.07297567567567566,
+      "per_strategy": {
+        "clamp_n_est": {
+          "attempted": 16,
+          "succeeded": 12,
+          "crashed": 0,
+          "n_measured": 12,
+          "mean_delta": -0.08944999999999999
+        },
+        "clamp_lr": {
+          "attempted": 16,
+          "succeeded": 15,
+          "crashed": 3,
+          "n_measured": 12,
+          "mean_delta": -0.09159166666666667
+        },
+        "clamp_depth": {
+          "attempted": 16,
+          "succeeded": 12,
+          "crashed": 0,
+          "n_measured": 12,
+          "mean_delta": -0.043924999999999985
+        },
+        "clamp_iter": {
+          "attempted": 1,
+          "succeeded": 1,
+          "crashed": 0,
+          "n_measured": 1,
+          "mean_delta": -0.0004999999999999449
+        }
+      }
+    }
+  },
+  "combined": {
+    "total_labeled_faulty": 121,
+    "total_clean": 87,
+    "combined_fault_rate": 0.5817
+  },
+  "oracle": {
+    "cost_savings_pct": 47.5011,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "chart_written": true,
+  "seed": 42,
+  "skip_reexec": false,
+  "runtime_sec": 7804.54
+}

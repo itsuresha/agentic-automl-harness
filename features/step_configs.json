@@ -1,0 +1,6810 @@
+{
+  "credit-g::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "credit-g::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 24,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d28525d33a0034f5",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "credit-g::2": null,
+  "credit-g::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d28525d33a0034f5",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "credit-g::4": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 16,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_df",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "credit-g::5": null,
+  "credit-g::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:727645c76285445a",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "credit-g::7": null,
+  "credit-g::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.01,
+      "n_estimators": 10000,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 5,
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 35,
+    "split_use_position": 38,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 16,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:a0fa68d33822cb34",
+    "notes": [
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 16 precedes split at line 35 (vocabulary-only)"
+    ]
+  },
+  "credit-g::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 24,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:818c755ad03cf49e",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 24 (vocabulary-only)"
+    ]
+  },
+  "credit-g::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "credit-g::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 26,
+    "split_use_position": 29,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 22,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 22: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 22 precedes split at line 26 (vocabulary-only)"
+    ]
+  },
+  "credit-g::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 16,
+    "split_use_position": 19,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "credit-g::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7c086c5dc651e87a",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "credit-g::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 500,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": "seed"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 22,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:591f8ba46fe20ef7",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 22 (vocabulary-only)"
+    ]
+  },
+  "credit-g::15": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 500,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "class_weight": "balanced",
+      "random_state": "seed"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 22,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:57cc9fa02c4beab4",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 22 (vocabulary-only)"
+    ]
+  },
+  "credit-g::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 500,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": "seed"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 27,
+    "split_use_position": 30,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 22,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:591f8ba46fe20ef7",
+    "notes": [
+      "line 22: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 22 precedes split at line 27 (vocabulary-only)"
+    ]
+  },
+  "credit-g::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 500,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "class_weight": "balanced",
+      "random_state": "seed"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 22,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:57cc9fa02c4beab4",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 22 (vocabulary-only)"
+    ]
+  },
+  "credit-g::18": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 500,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "max_depth": "md",
+      "random_state": "seed"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 22,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 16,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:28955e5b4ef8430a",
+    "notes": [
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 16 precedes split at line 22 (vocabulary-only)"
+    ]
+  },
+  "credit-g::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "max_depth": "md",
+      "random_state": "seed"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 22,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 16,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5cd657612c15083c",
+    "notes": [
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 16 precedes split at line 22 (vocabulary-only)"
+    ]
+  },
+  "diabetes::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "diabetes::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:60db59f4b7b7c0fe",
+    "notes": []
+  },
+  "diabetes::2": null,
+  "diabetes::3": null,
+  "diabetes::4": null,
+  "diabetes::5": null,
+  "diabetes::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:60db59f4b7b7c0fe",
+    "notes": []
+  },
+  "diabetes::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "learning_rate": 0.01,
+      "n_estimators": 10000
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:97fe0a755fa10812",
+    "notes": []
+  },
+  "diabetes::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "class_weight": "balanced",
+      "random_state": 42,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b39a90a334874c53",
+    "notes": []
+  },
+  "diabetes::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "class_weight": "balanced",
+      "random_state": 42,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b39a90a334874c53",
+    "notes": []
+  },
+  "diabetes::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "class_weight": "balanced",
+      "random_state": "seed",
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b5113e7a21ad9bdd",
+    "notes": []
+  },
+  "diabetes::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "class_weight": "balanced",
+      "random_state": "seed",
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b5113e7a21ad9bdd",
+    "notes": []
+  },
+  "diabetes::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "class_weight": "balanced",
+      "random_state": "seed",
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b5113e7a21ad9bdd",
+    "notes": []
+  },
+  "diabetes::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "class_weight": "balanced",
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 5,
+      "random_state": 42,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:9d13f34d0cf5ff3e",
+    "notes": []
+  },
+  "diabetes::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": 42,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:6e4d92e5be479cec",
+    "notes": []
+  },
+  "diabetes::15": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 64,
+      "max_depth": 8,
+      "colsample_bytree": 0.8,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.1,
+      "class_weight": "balanced",
+      "random_state": 42,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:99f7b800014a2ae1",
+    "notes": []
+  },
+  "diabetes::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 64,
+      "max_depth": 8,
+      "colsample_bytree": 0.8,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.1,
+      "class_weight": "balanced",
+      "random_state": "seed",
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 19,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:86445bc3665af18e",
+    "notes": []
+  },
+  "diabetes::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 64,
+      "max_depth": 8,
+      "colsample_bytree": 0.8,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.1,
+      "class_weight": "balanced",
+      "random_state": 42,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 16,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:99f7b800014a2ae1",
+    "notes": []
+  },
+  "diabetes::18": null,
+  "diabetes::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {},
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 30,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d03e90b0e1652888",
+    "notes": []
+  },
+  "tic-tac-toe::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 19,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "tic-tac-toe::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 19,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 16,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)"
+    ]
+  },
+  "tic-tac-toe::2": null,
+  "tic-tac-toe::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 10000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 19,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 16,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ab5ea29ed8525829",
+    "notes": [
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)"
+    ]
+  },
+  "tic-tac-toe::4": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "tic-tac-toe::5": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "random_state"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": "n_splits",
+      "shuffle": true,
+      "random_state": "random_state"
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:2abd77d06fdfd0bc",
+    "notes": []
+  },
+  "tic-tac-toe::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "tic-tac-toe::7": null,
+  "tic-tac-toe::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "random_state"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": "n_splits",
+      "shuffle": true,
+      "random_state": "random_state"
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:2abd77d06fdfd0bc",
+    "notes": []
+  },
+  "tic-tac-toe::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "tic-tac-toe::10": null,
+  "tic-tac-toe::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "tic-tac-toe::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:fc704c99edf99992",
+    "notes": []
+  },
+  "tic-tac-toe::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:fc704c99edf99992",
+    "notes": []
+  },
+  "tic-tac-toe::14": null,
+  "tic-tac-toe::15": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 33,
+    "split_use_position": 37,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_orig",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:fc704c99edf99992",
+    "notes": []
+  },
+  "tic-tac-toe::16": {
+    "model_class": "",
+    "hyperparameters": {},
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 31,
+    "split_use_position": 34,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_orig",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "partial_ast",
+    "canonical_hash": "v2:e7d2550a382b1633",
+    "notes": [
+      "no model class identified"
+    ]
+  },
+  "tic-tac-toe::17": {
+    "model_class": "",
+    "hyperparameters": {},
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 42,
+    "split_use_position": 44,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "mask_array",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "partial_ast",
+    "canonical_hash": "v2:e7d2550a382b1633",
+    "notes": [
+      "no model class identified"
+    ]
+  },
+  "tic-tac-toe::18": {
+    "model_class": "",
+    "hyperparameters": {},
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 56,
+    "split_use_position": 58,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "partial_ast",
+    "canonical_hash": "v2:e7d2550a382b1633",
+    "notes": [
+      "no model class identified"
+    ]
+  },
+  "tic-tac-toe::19": {
+    "model_class": "",
+    "hyperparameters": {},
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 63,
+    "split_use_position": 65,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "masks",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "partial_ast",
+    "canonical_hash": "v2:e7d2550a382b1633",
+    "notes": [
+      "no model class identified"
+    ]
+  },
+  "vehicle::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 14,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 14: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)"
+    ]
+  },
+  "vehicle::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 14,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d28525d33a0034f5",
+    "notes": [
+      "line 14: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)"
+    ]
+  },
+  "vehicle::2": null,
+  "vehicle::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 14,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:212b8a3bdedec1c2",
+    "notes": [
+      "line 14: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)"
+    ]
+  },
+  "vehicle::4": null,
+  "vehicle::5": null,
+  "vehicle::6": null,
+  "vehicle::7": null,
+  "vehicle::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "learning_rate": 0.05,
+      "n_estimators": 10000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 14,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:441d75d38d8ba0b1",
+    "notes": [
+      "line 14: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)"
+    ]
+  },
+  "vehicle::9": null,
+  "vehicle::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "learning_rate": 0.05,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 14,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:212b8a3bdedec1c2",
+    "notes": [
+      "line 14: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)"
+    ]
+  },
+  "vehicle::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 14,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7d903159c3e07c5f",
+    "notes": [
+      "line 14: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 14 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "vehicle::12": null,
+  "vehicle::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "learning_rate": "lr",
+      "num_leaves": "nl"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:9dfa094586222303",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "vehicle::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "learning_rate": "lr",
+      "num_leaves": "nl",
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:1cca090c77f2faa2",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "vehicle::15": null,
+  "vehicle::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:212b8a3bdedec1c2",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "vehicle::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "boosting_type": "gbdt",
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "num_leaves": 31
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 14,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:152980b89b1d927f",
+    "notes": [
+      "line 14: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)"
+    ]
+  },
+  "vehicle::18": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "objective": "multiclass",
+      "num_class": "<expr>"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5fdc35905187c094",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "vehicle::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "learning_rate": 0.05,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 14,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:212b8a3bdedec1c2",
+    "notes": [
+      "line 14: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 14 precedes split at line 17 (vocabulary-only)"
+    ]
+  },
+  "credit-approval::0": null,
+  "credit-approval::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "SimpleImputer",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "mean"
+      }
+    },
+    "split_position": 39,
+    "split_use_position": 42,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 18,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:16bd6aa2fa799103",
+    "notes": [
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 32: LabelEncoder is vocabulary-only, not a leakage source",
+      "leaking preprocessing fit at line 26 precedes split at line 39"
+    ]
+  },
+  "credit-approval::2": {
+    "model_class": "LogisticRegression",
+    "hyperparameters": {
+      "max_iter": 1000
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer",
+      "Pipeline"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 40,
+    "split_use_position": 42,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 45,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:a1185e72d3207583",
+    "notes": []
+  },
+  "credit-approval::3": null,
+  "credit-approval::4": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 36,
+    "split_use_position": 39,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 44,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:75e19531cb8182b3",
+    "notes": []
+  },
+  "credit-approval::5": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 36,
+    "split_use_position": 39,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 44,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ed500e118757fcf4",
+    "notes": []
+  },
+  "credit-approval::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 36,
+    "split_use_position": 39,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 44,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:75e19531cb8182b3",
+    "notes": []
+  },
+  "credit-approval::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.1
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 36,
+    "split_use_position": 39,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 44,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:22b25d65e2ae5aff",
+    "notes": []
+  },
+  "credit-approval::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 36,
+    "split_use_position": 40,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 45,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d991ce9fd84414a4",
+    "notes": []
+  },
+  "credit-approval::9": null,
+  "credit-approval::10": null,
+  "credit-approval::11": null,
+  "credit-approval::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "SimpleImputer",
+      "StandardScaler"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      }
+    },
+    "split_position": 20,
+    "split_use_position": 24,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 33,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:782f95ce17546bed",
+    "notes": []
+  },
+  "credit-approval::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 36,
+    "split_use_position": 39,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 62,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:75e19531cb8182b3",
+    "notes": []
+  },
+  "credit-approval::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.1
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      }
+    },
+    "split_position": 56,
+    "split_use_position": 59,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 65,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:1d1d08bdf105ccf8",
+    "notes": []
+  },
+  "credit-approval::15": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 36,
+    "split_use_position": 40,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 61,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d991ce9fd84414a4",
+    "notes": []
+  },
+  "credit-approval::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.1
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 36,
+    "split_use_position": 39,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 60,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:22b25d65e2ae5aff",
+    "notes": []
+  },
+  "credit-approval::17": null,
+  "credit-approval::18": null,
+  "credit-approval::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "boosting_type": "gbdt"
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "SimpleImputer",
+      "StandardScaler",
+      "Pipeline",
+      "SimpleImputer",
+      "OneHotEncoder",
+      "ColumnTransformer"
+    ],
+    "preprocessing_params": {
+      "SimpleImputer": {
+        "strategy": "median"
+      },
+      "SimpleImputer#2": {
+        "strategy": "most_frequent"
+      },
+      "OneHotEncoder": {
+        "handle_unknown": "ignore",
+        "sparse_output": false
+      }
+    },
+    "split_position": 35,
+    "split_use_position": 38,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 43,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:fe4cc72455e07cc6",
+    "notes": []
+  },
+  "kr-vs-kp::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4ea9ad0eccab342e",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 20: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::1": null,
+  "kr-vs-kp::2": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "learning_rate": 0.05,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4a16c512ccffd7cd",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4ea9ad0eccab342e",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 20: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::4": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 30,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:2c79a3d275263b18",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 20: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::5": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "binary",
+      "random_state": 42,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 39,
+    "split_use_position": 50,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:e0264f32bfd55254",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 39 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 24,
+    "split_use_position": 28,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 21,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 21: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 21 precedes split at line 24 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 24,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_num",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:eb57c0e0e1fa6458",
+    "notes": []
+  },
+  "kr-vs-kp::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 10000,
+      "learning_rate": 0.05,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:8d7eac14bec53f7a",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:f93e5cc0d5f618f6",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 28,
+    "split_use_position": 32,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 22,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:08147d108a362aa9",
+    "notes": [
+      "line 22: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 25: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 22 precedes split at line 28 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:f93e5cc0d5f618f6",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:08147d108a362aa9",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 20: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 24,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4884d1d128021e0a",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 10000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:e31f1d474565626c",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::15": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 10000,
+      "learning_rate": 0.05,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:8d7eac14bec53f7a",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 21 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 26,
+    "split_use_position": 30,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 20,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:08147d108a362aa9",
+    "notes": [
+      "line 20: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 23: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 20 precedes split at line 26 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 24,
+    "split_use_position": 30,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 18,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:9e8e581492326607",
+    "notes": [
+      "line 18: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 21: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 18 precedes split at line 24 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::18": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced",
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b4784ac615550c96",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 20: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "kr-vs-kp::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "boosting_type": "booster",
+      "n_estimators": 2000,
+      "learning_rate": 0.05,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder",
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 23,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:8a8e5812dea8049e",
+    "notes": [
+      "line 17: LabelEncoder is vocabulary-only, not a leakage source",
+      "line 20: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 17 precedes split at line 23 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::1": null,
+  "mfeat-factors::2": null,
+  "mfeat-factors::3": null,
+  "mfeat-factors::4": null,
+  "mfeat-factors::5": null,
+  "mfeat-factors::6": null,
+  "mfeat-factors::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:8b1255ea9efec3b0",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "boosting_type": "gbdt",
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:e36af9325d280fd1",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": "<expr>",
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "n_jobs": -1,
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:3ce1c4d85918cef2",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5100f7c9fa0dc70c",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5100f7c9fa0dc70c",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::12": null,
+  "mfeat-factors::13": null,
+  "mfeat-factors::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5100f7c9fa0dc70c",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::15": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "class_weight": "balanced",
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:018d76f5a9e37cdd",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.01,
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:0ae8c9b442842101",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5100f7c9fa0dc70c",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-factors::18": null,
+  "mfeat-factors::19": null,
+  "mfeat-fourier::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 20,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:08e2592497554c93",
+    "notes": [
+      "leaking preprocessing fit at line 17 precedes split at line 20"
+    ]
+  },
+  "mfeat-fourier::1": null,
+  "mfeat-fourier::2": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 20,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:84b9a8a64985bff4",
+    "notes": [
+      "leaking preprocessing fit at line 17 precedes split at line 20"
+    ]
+  },
+  "mfeat-fourier::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 27,
+    "split_use_position": 30,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 24,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:08e2592497554c93",
+    "notes": [
+      "leaking preprocessing fit at line 24 precedes split at line 27"
+    ]
+  },
+  "mfeat-fourier::4": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 31,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": 18,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:08e2592497554c93",
+    "notes": [
+      "leaking preprocessing fit at line 18 precedes split at line 31"
+    ]
+  },
+  "mfeat-fourier::5": {
+    "model_class": "RandomForestClassifier",
+    "hyperparameters": {
+      "n_estimators": 200,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 24,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 18,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:e3647c022d201cc4",
+    "notes": [
+      "leaking preprocessing fit at line 18 precedes split at line 21"
+    ]
+  },
+  "mfeat-fourier::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b22615842b27f930",
+    "notes": []
+  },
+  "mfeat-fourier::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 20,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:94812cfa917c42c0",
+    "notes": [
+      "leaking preprocessing fit at line 17 precedes split at line 20"
+    ]
+  },
+  "mfeat-fourier::8": null,
+  "mfeat-fourier::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": "<expr>",
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "max_depth": -1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.1,
+      "n_estimators": 10000,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 21,
+    "split_use_position": 24,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 18,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:12f370a285fc078a",
+    "notes": [
+      "leaking preprocessing fit at line 18 precedes split at line 21"
+    ]
+  },
+  "mfeat-fourier::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 20,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:18c032121ae104d2",
+    "notes": [
+      "leaking preprocessing fit at line 17 precedes split at line 20"
+    ]
+  },
+  "mfeat-fourier::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "objective": "multiclass"
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 39,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:0f4a3b74d450052b",
+    "notes": []
+  },
+  "mfeat-fourier::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 20,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:94812cfa917c42c0",
+    "notes": [
+      "leaking preprocessing fit at line 17 precedes split at line 20"
+    ]
+  },
+  "mfeat-fourier::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "num_leaves": 64,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 20,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X_scaled",
+    "target_var": "y",
+    "first_fit_position": 17,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:924bceba15f32a9a",
+    "notes": [
+      "leaking preprocessing fit at line 17 precedes split at line 20"
+    ]
+  },
+  "mfeat-fourier::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "num_leaves": 64,
+      "max_depth": 10,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.1,
+      "random_state": 42,
+      "objective": "multiclass",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 17,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 26,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ef01ef372a468a25",
+    "notes": []
+  },
+  "mfeat-fourier::15": null,
+  "mfeat-fourier::16": null,
+  "mfeat-fourier::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "Pipeline",
+      "StandardScaler"
+    ],
+    "preprocessing_params": {},
+    "split_position": 38,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:0f4a3b74d450052b",
+    "notes": []
+  },
+  "mfeat-fourier::18": null,
+  "mfeat-fourier::19": null,
+  "mfeat-morphological::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": 10,
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d51fff3622b2d285",
+    "notes": []
+  },
+  "mfeat-morphological::1": null,
+  "mfeat-morphological::2": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": 10,
+      "random_state": 42,
+      "learning_rate": 0.05,
+      "n_estimators": 1000
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5731445b1f4ce7b9",
+    "notes": []
+  },
+  "mfeat-morphological::3": null,
+  "mfeat-morphological::4": null,
+  "mfeat-morphological::5": null,
+  "mfeat-morphological::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": 10,
+      "random_state": 42,
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "num_leaves": 64,
+      "max_depth": 8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:e7ac1b25c26e3e5c",
+    "notes": []
+  },
+  "mfeat-morphological::7": null,
+  "mfeat-morphological::8": null,
+  "mfeat-morphological::9": null,
+  "mfeat-morphological::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": 10,
+      "learning_rate": 0.01,
+      "n_estimators": 5000,
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5dccc92aaa7d7400",
+    "notes": []
+  },
+  "mfeat-morphological::11": null,
+  "mfeat-morphological::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": 10,
+      "random_state": 42,
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "num_leaves": 128,
+      "max_depth": 12
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:82edd302ca6ce2a9",
+    "notes": []
+  },
+  "mfeat-morphological::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": "num_class",
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 26,
+    "split_use_position": 29,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:18104133e1d68b4c",
+    "notes": []
+  },
+  "mfeat-morphological::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": "num_class",
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "bagging_freq": 1,
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 25,
+    "split_use_position": 28,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:61ee2d50666c3a1c",
+    "notes": []
+  },
+  "mfeat-morphological::15": null,
+  "mfeat-morphological::16": null,
+  "mfeat-morphological::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": "num_class",
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "bagging_freq": 1,
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 25,
+    "split_use_position": 28,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:e23d9abbcb637c28",
+    "notes": []
+  },
+  "mfeat-morphological::18": null,
+  "mfeat-morphological::19": null,
+  "mfeat-zernike::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d28525d33a0034f5",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::2": null,
+  "mfeat-zernike::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 19,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 16,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:577d6dd47d64222a",
+    "notes": [
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::4": null,
+  "mfeat-zernike::5": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 19,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 16,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:577d6dd47d64222a",
+    "notes": [
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": 10,
+      "learning_rate": 0.05,
+      "n_estimators": 10000,
+      "num_leaves": 64,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "subsample_freq": 1,
+      "random_state": 42,
+      "verbose": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:8984b489dac214d2",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.02,
+      "num_leaves": 64,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 1,
+      "reg_lambda": 1,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:edf19b92fff4d254",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclassova",
+      "random_state": 42,
+      "n_estimators": 1000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:12f9b455ec8c6e59",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "boosting_type": "dart",
+      "drop_rate": 0.1,
+      "skip_drop": 0.5
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:bc146fbf04f33649",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7c086c5dc651e87a",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.01,
+      "n_estimators": 2000,
+      "num_leaves": 64,
+      "random_state": 52,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:17a81d5e4d8ab292",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::12": null,
+  "mfeat-zernike::13": null,
+  "mfeat-zernike::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "boosting_type": "dart",
+      "learning_rate": 0.02,
+      "n_estimators": 1500,
+      "num_leaves": 50,
+      "drop_rate": 0.1,
+      "skip_drop": 0.5,
+      "n_jobs": 1,
+      "random_state": 62,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 25,
+    "split_use_position": 28,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 22,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:98d448915bab5099",
+    "notes": [
+      "line 22: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 22 precedes split at line 25 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::15": null,
+  "mfeat-zernike::16": null,
+  "mfeat-zernike::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.01,
+      "n_estimators": 5000,
+      "num_leaves": 64,
+      "random_state": 52,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 19,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 16,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:8f19d309769f0748",
+    "notes": [
+      "line 16: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 16 precedes split at line 19 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::18": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.01,
+      "n_estimators": 2000,
+      "num_leaves": 64,
+      "class_weight": "balanced",
+      "random_state": 52,
+      "verbosity": -1,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:0916f4b41ce9b038",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "mfeat-zernike::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "boosting_type": "dart",
+      "learning_rate": 0.02,
+      "n_estimators": 1500,
+      "num_leaves": 50,
+      "drop_rate": 0.1,
+      "skip_drop": 0.5,
+      "n_jobs": 1,
+      "random_state": 62,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 18,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y_enc",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:98d448915bab5099",
+    "notes": [
+      "line 15: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 15 precedes split at line 18 (vocabulary-only)"
+    ]
+  },
+  "pendigits::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 19,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dd86a4054412fc6b",
+    "notes": []
+  },
+  "pendigits::1": null,
+  "pendigits::2": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 10000
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 19,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:eb57c0e0e1fa6458",
+    "notes": []
+  },
+  "pendigits::3": null,
+  "pendigits::4": null,
+  "pendigits::5": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 10000,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 19,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7fde1f7a3df7eb56",
+    "notes": []
+  },
+  "pendigits::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 10000
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 16,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:9e7b7ded84203f12",
+    "notes": []
+  },
+  "pendigits::7": null,
+  "pendigits::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:88d7f8f3a4d80c40",
+    "notes": []
+  },
+  "pendigits::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "learning_rate": 0.05,
+      "n_estimators": 2000,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:9e8794d1357fbd6d",
+    "notes": []
+  },
+  "pendigits::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_estimators": 1000,
+      "verbosity": -1,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7c977298d9f903fc",
+    "notes": []
+  },
+  "pendigits::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 1000,
+      "verbosity": -1,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7302df179d4755be",
+    "notes": []
+  },
+  "pendigits::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "learning_rate": 0.05,
+      "n_estimators": 2000,
+      "verbosity": -1,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4e859e1da08b00f3",
+    "notes": []
+  },
+  "pendigits::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 5000,
+      "learning_rate": 0.05,
+      "verbosity": -1,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:24cc46ace292fb55",
+    "notes": []
+  },
+  "pendigits::14": null,
+  "pendigits::15": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 1000,
+      "verbosity": -1,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7302df179d4755be",
+    "notes": []
+  },
+  "pendigits::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 1000,
+      "learning_rate": 0.1,
+      "verbosity": -1,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:a19af712ccaca061",
+    "notes": []
+  },
+  "pendigits::17": null,
+  "pendigits::18": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 2000,
+      "learning_rate": 0.05,
+      "verbosity": -1,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4e859e1da08b00f3",
+    "notes": []
+  },
+  "pendigits::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_estimators": 1000,
+      "learning_rate": 0.1,
+      "verbosity": -1,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "feature_fraction": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 19,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:a19af712ccaca061",
+    "notes": []
+  },
+  "letter::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:818c755ad03cf49e",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::1": null,
+  "letter::2": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4dab2cb4da5c5933",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.05,
+      "n_estimators": 1000,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5bed080adde5ef98",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::4": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.05,
+      "n_estimators": 2000,
+      "num_leaves": 64,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:515cff6442f6cf48",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::5": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "class_weight": "balanced",
+      "learning_rate": 0.05,
+      "n_estimators": 2000,
+      "num_leaves": 64,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:e30548a07317a6c0",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::6": null,
+  "letter::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.05,
+      "n_estimators": 2000,
+      "num_leaves": 128,
+      "max_depth": 10,
+      "reg_alpha": 0.2,
+      "reg_lambda": 0.2,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:f68d55d3e84309b4",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::8": null,
+  "letter::9": null,
+  "letter::10": null,
+  "letter::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.03,
+      "n_estimators": 3000,
+      "num_leaves": 128,
+      "max_depth": 12,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "random_state": 2021,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:86d3537ca95051f3",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::12": null,
+  "letter::13": null,
+  "letter::14": null,
+  "letter::15": null,
+  "letter::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.03,
+      "n_estimators": 3000,
+      "num_leaves": 128,
+      "max_depth": 12,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "random_state": 2021,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:86d3537ca95051f3",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "boosting_type": "gbdt",
+      "learning_rate": 0.05,
+      "n_estimators": 2000,
+      "num_leaves": 64,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 1,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:eeb15eb82c52149b",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "letter::18": null,
+  "letter::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "learning_rate": 0.03,
+      "n_estimators": 1000,
+      "num_leaves": 128,
+      "max_depth": 12,
+      "colsample_bytree": 0.8,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "random_state": 2021,
+      "n_jobs": -1,
+      "verbose": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:1b6f5503fa7e48da",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "jasmine::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:90c2e0da153cad9f",
+    "notes": []
+  },
+  "jasmine::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4473f3306a9faab1",
+    "notes": []
+  },
+  "jasmine::2": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:90c2e0da153cad9f",
+    "notes": []
+  },
+  "jasmine::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:90c2e0da153cad9f",
+    "notes": []
+  },
+  "jasmine::4": null,
+  "jasmine::5": null,
+  "jasmine::6": null,
+  "jasmine::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_jobs": -1,
+      "n_estimators": 500,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b52ec08b4599b4d6",
+    "notes": []
+  },
+  "jasmine::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b6d934add66c573e",
+    "notes": []
+  },
+  "jasmine::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "learning_rate": 0.05,
+      "n_estimators": 10000,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:377d770f33580c13",
+    "notes": []
+  },
+  "jasmine::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:b6d934add66c573e",
+    "notes": []
+  },
+  "jasmine::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:c6936b681bc3b5ff",
+    "notes": []
+  },
+  "jasmine::12": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:c6936b681bc3b5ff",
+    "notes": []
+  },
+  "jasmine::13": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:c6936b681bc3b5ff",
+    "notes": []
+  },
+  "jasmine::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:c6936b681bc3b5ff",
+    "notes": []
+  },
+  "jasmine::15": null,
+  "jasmine::16": null,
+  "jasmine::17": null,
+  "jasmine::18": null,
+  "jasmine::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 22,
+    "split_use_position": 27,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:c6936b681bc3b5ff",
+    "notes": []
+  },
+  "amazon-commerce-reviews::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": "<expr>",
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "VarianceThreshold"
+    ],
+    "preprocessing_params": {
+      "VarianceThreshold": {
+        "threshold": 0.0
+      }
+    },
+    "split_position": 19,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": "n_splits",
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": "VarianceThreshold",
+    "feature_var": "X_reduced",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:f33f41da5a1ad601",
+    "notes": [
+      "leaking preprocessing fit at line 15 precedes split at line 19"
+    ]
+  },
+  "amazon-commerce-reviews::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": "<expr>",
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "VarianceThreshold"
+    ],
+    "preprocessing_params": {
+      "VarianceThreshold": {
+        "threshold": 0.0
+      }
+    },
+    "split_position": 19,
+    "split_use_position": 22,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": "n_splits",
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": "VarianceThreshold",
+    "feature_var": "X_reduced",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:f33f41da5a1ad601",
+    "notes": [
+      "leaking preprocessing fit at line 15 precedes split at line 19"
+    ]
+  },
+  "amazon-commerce-reviews::2": null,
+  "amazon-commerce-reviews::3": null,
+  "amazon-commerce-reviews::4": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclass",
+      "num_class": "<expr>",
+      "learning_rate": 0.05,
+      "n_estimators": 2000,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "VarianceThreshold"
+    ],
+    "preprocessing_params": {
+      "VarianceThreshold": {
+        "threshold": 0.0
+      }
+    },
+    "split_position": 19,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": "n_splits",
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": "VarianceThreshold",
+    "feature_var": "X_reduced",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5d7967a8907fc08e",
+    "notes": [
+      "leaking preprocessing fit at line 15 precedes split at line 19"
+    ]
+  },
+  "amazon-commerce-reviews::5": null,
+  "amazon-commerce-reviews::6": null,
+  "amazon-commerce-reviews::7": null,
+  "amazon-commerce-reviews::8": null,
+  "amazon-commerce-reviews::9": null,
+  "amazon-commerce-reviews::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "objective": "multiclassova",
+      "num_class": "<expr>",
+      "learning_rate": 0.05,
+      "n_estimators": 2000,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "VarianceThreshold"
+    ],
+    "preprocessing_params": {
+      "VarianceThreshold": {
+        "threshold": 0.0
+      }
+    },
+    "split_position": 19,
+    "split_use_position": 23,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": "n_splits",
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": "VarianceThreshold",
+    "feature_var": "X_reduced",
+    "target_var": "y",
+    "first_fit_position": 15,
+    "preprocessing_before_split": true,
+    "leaky_before_split": true,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dfa339f42634b827",
+    "notes": [
+      "leaking preprocessing fit at line 15 precedes split at line 19"
+    ]
+  },
+  "amazon-commerce-reviews::11": null,
+  "amazon-commerce-reviews::12": null,
+  "amazon-commerce-reviews::13": null,
+  "amazon-commerce-reviews::14": null,
+  "amazon-commerce-reviews::15": null,
+  "amazon-commerce-reviews::16": null,
+  "amazon-commerce-reviews::17": null,
+  "amazon-commerce-reviews::18": null,
+  "amazon-commerce-reviews::19": null,
+  "Satellite::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 19,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": 13,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:ec4b2410f3f9ed86",
+    "notes": [
+      "line 13: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 13 precedes split at line 19 (vocabulary-only)"
+    ]
+  },
+  "Satellite::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 19,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": 13,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d28525d33a0034f5",
+    "notes": [
+      "line 13: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 13 precedes split at line 19 (vocabulary-only)"
+    ]
+  },
+  "Satellite::2": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:818c755ad03cf49e",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::3": null,
+  "Satellite::4": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 64,
+      "max_depth": 7,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:cffaf36b581df1dc",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::5": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": 64,
+      "max_depth": 7,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 21,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7c21a5664c4d97e9",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "num_leaves": "leaves",
+      "max_depth": 7,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": "seed",
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:e49106d675293a6f",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "max_depth": 7,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:db4aafd3050f28cb",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "max_depth": 7,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 33,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:db4aafd3050f28cb",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::9": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "max_depth": 7,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 33,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:db4aafd3050f28cb",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "max_depth": 7,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:db4aafd3050f28cb",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "Satellite::11": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "max_depth": 7,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 32,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:db4aafd3050f28cb",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::12": {
+    "model_class": "LogisticRegression",
+    "hyperparameters": {
+      "solver": "lbfgs",
+      "max_iter": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:f9638dac9d0ac75a",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "Satellite::13": {
+    "model_class": "LogisticRegression",
+    "hyperparameters": {
+      "solver": "lbfgs",
+      "max_iter": 1000
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:f9638dac9d0ac75a",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "Satellite::14": null,
+  "Satellite::15": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "max_depth": 7,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:db4aafd3050f28cb",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "Satellite::16": null,
+  "Satellite::17": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "max_depth": 7,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 32,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:db4aafd3050f28cb",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "Satellite::18": {
+    "model_class": "LogisticRegression",
+    "hyperparameters": {
+      "max_iter": 1000,
+      "solver": "lbfgs",
+      "class_weight": "balanced",
+      "random_state": 42
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": 26,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 12,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:242ddeb7a98eafa3",
+    "notes": [
+      "line 12: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 12 precedes split at line 15 (vocabulary-only)"
+    ]
+  },
+  "Satellite::19": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "n_estimators": 10000,
+      "learning_rate": 0.01,
+      "max_depth": 7,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [
+      "LabelEncoder"
+    ],
+    "preprocessing_params": {},
+    "split_position": 14,
+    "split_use_position": 25,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": 11,
+    "preprocessing_before_split": true,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:db4aafd3050f28cb",
+    "notes": [
+      "line 11: LabelEncoder is vocabulary-only, not a leakage source",
+      "preprocessing fit at line 11 precedes split at line 14 (vocabulary-only)"
+    ]
+  },
+  "christine::0": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:90c2e0da153cad9f",
+    "notes": []
+  },
+  "christine::1": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 15,
+    "split_use_position": null,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": null,
+    "target_var": null,
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4473f3306a9faab1",
+    "notes": []
+  },
+  "christine::2": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:4473f3306a9faab1",
+    "notes": []
+  },
+  "christine::3": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_jobs": -1,
+      "class_weight": "balanced"
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 20,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:af95270411186a68",
+    "notes": []
+  },
+  "christine::4": null,
+  "christine::5": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "n_estimators": 10000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:377d770f33580c13",
+    "notes": []
+  },
+  "christine::6": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "n_estimators": 10000,
+      "learning_rate": 0.05
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:95a5c632fc811831",
+    "notes": []
+  },
+  "christine::7": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "n_estimators": 10000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5a9152157082b44f",
+    "notes": []
+  },
+  "christine::8": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": "seed",
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "n_estimators": 10000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:f580fdb82a9069fd",
+    "notes": []
+  },
+  "christine::9": null,
+  "christine::10": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "n_estimators": 10000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:5a9152157082b44f",
+    "notes": []
+  },
+  "christine::11": null,
+  "christine::12": null,
+  "christine::13": null,
+  "christine::14": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "boosting_type": "gbdt",
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "n_estimators": 10000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 16,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:7a760a12417453ee",
+    "notes": []
+  },
+  "christine::15": null,
+  "christine::16": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "boosting_type": "gbdt",
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "n_estimators": 2000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 17,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:d453463d7932ffba",
+    "notes": []
+  },
+  "christine::17": null,
+  "christine::18": {
+    "model_class": "LGBMClassifier",
+    "hyperparameters": {
+      "boosting_type": "gbdt",
+      "random_state": 42,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "n_estimators": 10000,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "verbosity": -1
+    },
+    "preprocessing_chain": [],
+    "preprocessing_params": {},
+    "split_position": 13,
+    "split_use_position": 18,
+    "split_method": "StratifiedKFold",
+    "split_params": {
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 42
+    },
+    "feature_selector": null,
+    "feature_var": "X",
+    "target_var": "y",
+    "first_fit_position": null,
+    "preprocessing_before_split": false,
+    "leaky_before_split": false,
+    "parse_quality": "full_ast",
+    "canonical_hash": "v2:dafb2a7ef2866266",
+    "notes": []
+  },
+  "christine::19": null
+}
